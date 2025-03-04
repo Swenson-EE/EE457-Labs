@@ -1,0 +1,93 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/EE457G/Labs/uwm_ee457_vhdl_labs/lab4a
+Ereg16
+Z1 w1738859749
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8reg16.vhd
+Z6 Freg16.vhd
+l0
+L6
+V<=K5RjMG_^Oc1RbgLHeij2
+!s100 ;d9l3k1@a1<g5DLIG]ZK02
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1738859849
+!i10b 1
+Z9 !s108 1738859849.000000
+Z10 !s90 -reportprogress|300|-2008|reg16.vhd|reg16_tb.vhd|
+Z11 !s107 reg16_tb.vhd|reg16.vhd|
+!i113 1
+Z12 o-2008
+Z13 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+Z14 DEx4 work 5 reg16 0 22 <=K5RjMG_^Oc1RbgLHeij2
+l23
+L21
+Vhb46aMoEbZLGAVM0;7z]51
+!s100 HaKfLe4m7g[JhZXJ1AWhm2
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ereg16_tb
+Z15 w1738186710
+R2
+R3
+R4
+R0
+Z16 8reg16_tb.vhd
+Z17 Freg16_tb.vhd
+l0
+L24
+V7d=idEHG2ka]4U_0?7Ul81
+!s100 D>RVi7J3T24oaXS=706Rc0
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Astimulus
+R14
+R2
+R3
+R4
+DEx4 work 8 reg16_tb 0 22 7d=idEHG2ka]4U_0?7Ul81
+l43
+L27
+V@Z8`RUgUXl>T_1d9ID>UB1
+!s100 [MJU:3LZXU8XzBnlVY3392
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
