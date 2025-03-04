@@ -1,0 +1,16 @@
+LIBRARY IEEE;
+USE IEEE.NUMERIC_STD.ALL;
+
+ENTITY mux4 IS
+
+	PORT(
+		SIGNAL mux_in_a		: IN UNSIGNED (3 DOWNTO 0);
+		SIGNAL mux_in_b		: IN UNSIGNED (3 DOWNTO 0);
+		SIGNAL mux_sel			: IN UNSIGNED (1);
+		
+		SIGNAL mux_out			: OUT UNSIGNED (3 DOWNTO 1);
+		
+	);
+
+END ENTITY mux4;
+

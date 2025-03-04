@@ -1,0 +1,93 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/EE457G/Labs/uwm_ee457_vhdl_labs/lab2b
+Eshifter
+Z1 w1738255965
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8shifter.vhd
+Z6 Fshifter.vhd
+l0
+L6
+VNmX>bk6ABgk0J0em4853L1
+!s100 j1Z?BJmo@WSN_cRFhz=Ib2
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1738255990
+!i10b 1
+Z9 !s108 1738255990.000000
+Z10 !s90 -reportprogress|300|-2008|shifter.vhd|shifter_tb.vhd|
+Z11 !s107 shifter_tb.vhd|shifter.vhd|
+!i113 1
+Z12 o-2008
+Z13 tExplicit 1 CvgOpt 0
+Ashifter_arch
+R2
+R3
+R4
+Z14 DEx4 work 7 shifter 0 22 NmX>bk6ABgk0J0em4853L1
+l21
+L19
+VN>5=]IGfYJ9[=fC=iHGnJ3
+!s100 LKkmn1WYnSKzXc>];2TJl0
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eshifter_tb
+Z15 w1738186710
+R2
+R3
+R4
+R0
+Z16 8shifter_tb.vhd
+Z17 Fshifter_tb.vhd
+l0
+L25
+V<@W>mHGZMWZj>oi1VPCm@2
+!s100 G6B]Pj9SXTgc>m5=:94g=1
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Astimulus
+R14
+R2
+R3
+R4
+DEx4 work 10 shifter_tb 0 22 <@W>mHGZMWZj>oi1VPCm@2
+l44
+L28
+VZ@6;mMMnf@_7@8T1MIifK2
+!s100 Ao66MQ=4BD5ORa1Zc>iSm2
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
