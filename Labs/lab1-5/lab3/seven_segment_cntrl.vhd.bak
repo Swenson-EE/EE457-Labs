@@ -1,0 +1,32 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.NUMERIC_STD.ALL;
+
+
+
+ENTITY seven_segment_cntrl IS
+
+	PORT(
+		SIGNAL input			: IN UNSIGNED (2 DOWNTO 0);
+		
+		SIGNAL seg_a			: OUT STD_LOGIC;
+		SIGNAL seg_b			: OUT STD_LOGIC;
+		SIGNAL seg_c			: OUT STD_LOGIC;
+		SIGNAL seg_d			: OUT STD_LOGIC;
+		SIGNAL seg_e			: OUT STD_LOGIC;
+		SIGNAL seg_f			: OUT STD_LOGIC;
+		SIGNAL seg_g			: OUT STD_LOGIC;
+		
+	);
+
+END ENTITY;
+
+
+
+ARCHITECTURE rtl OF seven_segment_cntrl IS
+
+BEGIN
+	
+
+END
+
