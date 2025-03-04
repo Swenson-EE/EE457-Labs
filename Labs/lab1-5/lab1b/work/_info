@@ -1,0 +1,93 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/EE457G/Labs/uwm_ee457_vhdl_labs/lab1b
+Emult4x4
+Z1 w1738189658
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R0
+Z5 8mult4x4.vhd
+Z6 Fmult4x4.vhd
+l0
+L4
+VTdFTW84LEDJO>T<iYc9E20
+!s100 1d9Nj1O]MTnBVZgEf5]hL2
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1738189763
+!i10b 1
+Z9 !s108 1738189763.000000
+Z10 !s90 -reportprogress|300|-2008|mult4x4.vhd|mult4x4_tb.vhd|
+Z11 !s107 mult4x4_tb.vhd|mult4x4.vhd|
+!i113 1
+Z12 o-2008
+Z13 tExplicit 1 CvgOpt 0
+Amult4x4_arch
+R2
+R3
+R4
+Z14 DEx4 work 7 mult4x4 0 22 TdFTW84LEDJO>T<iYc9E20
+l18
+L16
+VLEzA6XYgKn_8k_aAUB0cP1
+!s100 0oZd4Wic1BTPnIKhFHCVZ1
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Emult4x4_tb
+Z15 w1738186709
+R4
+R3
+R2
+R0
+Z16 8mult4x4_tb.vhd
+Z17 Fmult4x4_tb.vhd
+l0
+L24
+VeTk]QUVe8MBKOS5I@Q]d<0
+!s100 VX9A9>FI_S3SnV9PR8Tk;1
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Astimulus
+R14
+R4
+R3
+R2
+DEx4 work 10 mult4x4_tb 0 22 eTk]QUVe8MBKOS5I@Q]d<0
+l42
+L27
+VP8:6d`jhE91GS48`KUh[N1
+!s100 =Y3nb8hONHk=9K`;8:4IF2
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13

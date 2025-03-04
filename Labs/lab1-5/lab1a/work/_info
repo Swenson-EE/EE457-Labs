@@ -1,0 +1,93 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/EE457G/Labs/uwm_ee457_vhdl_labs/lab1a
+Eadder
+Z1 w1738188902
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R0
+Z5 8adder.vhd
+Z6 Fadder.vhd
+l0
+L5
+VNIf];mXH0IZ:FX[N>jHmk1
+!s100 eO71:dMD7AzcmRCi4b1]11
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1738189172
+!i10b 1
+Z9 !s108 1738189172.000000
+Z10 !s90 -reportprogress|300|-2008|adder.vhd|adder_tb.vhd|
+Z11 !s107 adder_tb.vhd|adder.vhd|
+!i113 1
+Z12 o-2008
+Z13 tExplicit 1 CvgOpt 0
+Aadder_arch
+R2
+R3
+R4
+Z14 DEx4 work 5 adder 0 22 NIf];mXH0IZ:FX[N>jHmk1
+l19
+L17
+VE7NJleoDQ@1AQ?__6CeaN0
+!s100 6XffYLO=DCCkSYz[3LCH]2
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Eadder_tb
+Z15 w1738186709
+R4
+R3
+R2
+R0
+Z16 8adder_tb.vhd
+Z17 Fadder_tb.vhd
+l0
+L24
+V57mZPF66a6hm=cIId`Do30
+!s100 L@Yo_oGAa>5O5Tn1C?fS32
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Astimulus
+R14
+R4
+R3
+R2
+DEx4 work 8 adder_tb 0 22 57mZPF66a6hm=cIId`Do30
+l41
+L27
+VUAD<0JbUBX:B=9H?TL3:O1
+!s100 [C4?fo`2kW117_<8V`NU^0
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
