@@ -1,0 +1,15 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity ClockDivider is
+	port(
+		signal clk: in STD_LOGIC;
+		signal reset: in STD_LOGIC;
+		
+		signal slow_clk: out STD_LOGIC
+	
+	);
+
+end entity;
