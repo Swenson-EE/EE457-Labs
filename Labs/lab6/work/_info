@@ -1,0 +1,220 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/EE457G/Labs/lab6
+Eclockdivider
+Z1 w1741642932
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8ClockDivider.vhd
+Z7 FClockDivider.vhd
+l0
+L6
+V5J3[nTPgZo[lj]HW67OY<1
+!s100 _5]F2U_LGQB;:P9]AE1k50
+Z8 OV;C;10.5b;63
+33
+Z9 !s110 1741768761
+!i10b 1
+Z10 !s108 1741768761.000000
+Z11 !s90 -reportprogress|300|-2008|ClockDivider.vhd|
+Z12 !s107 ClockDivider.vhd|
+!i113 1
+Z13 o-2008
+Z14 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+R5
+Z15 DEx4 work 12 clockdivider 0 22 5J3[nTPgZo[lj]HW67OY<1
+l24
+L19
+Vch63_zLPfNPf54No6=OMH2
+!s100 I^4B>2U;e6ha_5`zQL?673
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ede10_lite_base
+Z16 w1741593392
+Z17 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R4
+R5
+R0
+Z18 8de10_lite_base.vhd
+Z19 Fde10_lite_base.vhd
+l0
+L9
+VbNzT3eQU^d1ISDehgKd1b0
+!s100 USO>kY;nL:b09`U6>32bR2
+R8
+33
+R9
+!i10b 1
+R10
+Z20 !s90 -reportprogress|300|-2008|de10_lite_base.vhd|
+Z21 !s107 de10_lite_base.vhd|
+!i113 1
+R13
+R14
+Ade10_lite
+R2
+R3
+R15
+Z22 DEx4 work 12 synchronizer 0 22 AHXJ4G_E5BVl@IZ3@FWVz2
+R17
+R4
+R5
+Z23 DEx4 work 14 de10_lite_base 0 22 bNzT3eQU^d1ISDehgKd1b0
+l27
+L23
+VBSI@?:PoGV8_6FJE;6SI`3
+!s100 Yl5f@B9295?gM]bnARMhV1
+R8
+33
+R9
+!i10b 1
+R10
+R20
+R21
+!i113 1
+R13
+R14
+Ede10_lite_tb
+Z24 w1741768721
+R17
+R4
+R5
+R0
+Z25 8de10_lite_tb.vhd
+Z26 Fde10_lite_tb.vhd
+l0
+L5
+Vm^ncN=`_lndKN[GbH`<B80
+!s100 ^HeMzQUk:R`jCBJ?;R_5C1
+R8
+33
+R9
+!i10b 1
+R10
+Z27 !s90 -reportprogress|300|-2008|de10_lite_tb.vhd|
+Z28 !s107 de10_lite_tb.vhd|
+!i113 1
+R13
+R14
+Atb
+R23
+R17
+R4
+R5
+Z29 DEx4 work 12 de10_lite_tb 0 22 m^ncN=`_lndKN[GbH`<B80
+l51
+L8
+Vj1ig3@UN4;i0[j>A^DE0d2
+!s100 bjX`nkOQlHmKCV6XPj_fD1
+R8
+33
+R9
+!i10b 1
+R10
+R27
+R28
+!i113 1
+R13
+R14
+Egen_counter
+Z30 w1740901591
+R17
+R4
+R5
+R0
+Z31 8gen_counter.vhd
+Z32 Fgen_counter.vhd
+l0
+L5
+VF^TPESm`j;]IRBbfHCQzC1
+!s100 :fKKd5fnTAV8d0Qh;_G8B1
+R8
+33
+R9
+!i10b 1
+R10
+Z33 !s90 -reportprogress|300|-2008|gen_counter.vhd|
+Z34 !s107 gen_counter.vhd|
+!i113 1
+R13
+R14
+Artl
+R17
+R4
+R5
+DEx4 work 11 gen_counter 0 22 F^TPESm`j;]IRBbfHCQzC1
+l26
+L22
+V<a8k`UOmYC2bCOWi:@?Z40
+!s100 MV3dG[NR9Fh=co6kHch9U3
+R8
+33
+R9
+!i10b 1
+R10
+R33
+R34
+!i113 1
+R13
+R14
+Esynchronizer
+Z35 w1741593241
+R4
+R5
+R0
+Z36 8Synchronizer.vhd
+Z37 FSynchronizer.vhd
+l0
+L4
+VAHXJ4G_E5BVl@IZ3@FWVz2
+!s100 05J9K``d8`P;O;CQa9<kj2
+R8
+33
+R9
+!i10b 1
+R10
+Z38 !s90 -reportprogress|300|-2008|Synchronizer.vhd|
+Z39 !s107 Synchronizer.vhd|
+!i113 1
+R13
+R14
+Artl
+R4
+R5
+R22
+l21
+L17
+V7W`oPboZl]JK94b8DU22e3
+!s100 m@e9NUP8;DQDncPG?:NRY1
+R8
+33
+R9
+!i10b 1
+R10
+R38
+R39
+!i113 1
+R13
+R14
