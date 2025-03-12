@@ -24,6 +24,7 @@ end entity;
 architecture de10_lite of de10_lite_base is
     signal MAX10_CLK2	: std_logic;
 	 signal reset : std_logic;
+	 signal direction: std_logic;
 
 begin
 	
@@ -33,8 +34,14 @@ begin
 		sync_out => reset
 	);
 	
+	u2: entity work.Synchronizer port map(
+		clk => MAX10_CLK1_50,
+		async_in => SW(0),
+		sync_out => direction
+	);
 	
-	u2: entity work.clockDivider
+	
+	u3: entity work.clockDivider
 		generic map(
 			counts_per_tick => 4 -- for synthesis
 		)
