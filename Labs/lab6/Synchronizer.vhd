@@ -7,7 +7,7 @@ entity Synchronizer is
 		signal clk			: in std_logic;
 		signal async_in	: in std_logic;
 		
-		signal sync_out	: out std_logic;
+		signal sync_out	: out std_logic
 	);
 
 end entity;
