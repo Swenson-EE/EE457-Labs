@@ -4,6 +4,10 @@ use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
 entity ClockDivider is
+	generic(
+		counts_per_tick: integer := 25_000_000
+	);
+
 	port(
 		signal clk: in STD_LOGIC;
 		signal reset: in STD_LOGIC;
@@ -21,21 +25,23 @@ architecture rtl of ClockDivider is
 	signal clk_out: STD_LOGIC := '0';
 	
 	
-	
 begin
 	process (clk, reset)
-		if reset = '1' then
+	begin
+		if reset = '0' then
 			counter <= 0;
 			clk_out <= '0';
 		elsif rising_edge(clk) then
-			if counter = 25_000_000 then
+			if counter = counts_per_tick then
 				clk_out <= not clk_out;
-				count <= 0;
+				counter <= 0;
 			else
 				counter <= counter + 1;
 			end if;
 		end if;
 	end process;
 
-
+	
+	slow_clk <= clk_out;
+	
 end architecture;
