@@ -28,8 +28,13 @@ architecture tb of de10_lite_tb is
 -- );
 -- end component;
 
-constant CLK_PER: time := 20 ns;
-constant clk_cycle:time := 2*clk_per;
+constant number_of_states: integer := 10;
+constant slow_clk_wait: time := 1 sec;
+
+
+
+constant clk_per: time := 20 ns;				-- 50 MHz Clock
+constant clk_cycle:time := 2*clk_per;		
 
 signal aclr_n : std_logic;
 signal clk    : std_logic := '0';
@@ -45,27 +50,27 @@ signal hex5    : std_logic_vector(7 downto 0); -- left most
 
 begin
     
-    clk <= not clk after CLK_PER/2; -- generate a 50MHz clock signal, continuously toggling
-
+--    clk <= not clk after CLK_PER/2; -- generate a 50MHz clock signal, continuously toggling
     
-    vectors:process begin -- put you test vectors here, remember to advance the simulation in modelsim
-        aclr_n <= '0';         -- assert the asynchronous reset signal
+--    vectors:process begin -- put you test vectors here, remember to advance the simulation in modelsim
+--        aclr_n <= '0';         -- assert the asynchronous reset signal
+--
+--        aclr_n <= '0';         -- assert the asynchronous reset signal
+--        sw     <= "0000000000"; -- drive all the switch inputs to a 0
+--        wait for 5 ns;             -- wait for a fraction of the clock so stimulus is not occurring on clock edges
+--        aclr_n <= '1';             -- release the reset signal
+--
+--        wait for 2*clk_cycle; --  wait for a number of clock cycles      
+--        
+--        -- add more vectors to test everything
+--        
+--        end process;
+--
+-- key(1) <= aclr_n;
+-- key(0) <= clk;
 
-        aclr_n <= '0';         -- assert the asynchronous reset signal
-        sw     <= "0000000000"; -- drive all the switch inputs to a 0
-        wait for 5 ns;             -- wait for a fraction of the clock so stimulus is not occurring on clock edges
-        aclr_n <= '1';             -- release the reset signal
 
-        wait for 2*clk_cycle; --  wait for a number of clock cycles
-        
-        
-        -- add more vectors to test everything
-        
-        end process;
 
-key(1) <= aclr_n;
-key(0) <= clk;
-        
 
 -- instantiate the device under test (dut)
 dut: entity work.de10_lite_base
@@ -87,4 +92,57 @@ port map (
     LEDR         => ledr
 
 );
+
+
+	-- Clock process
+	clk_process: process
+	begin
+		wait for clk_per / 2;
+		clk <= not clk;
+		
+	end process;
+	
+	
+	
+	vectors: process
+	begin
+		-- Initial reset
+		key(1) <= '0';
+		wait for 50 ns;
+		key(1) <= '1';
+		wait for 1 us;
+		
+		-- Step through states in the forward direction
+		sw(0) <= '0';
+		for i in 0 to (number_of_states + 2) loop
+			wait for slow_clk_wait;
+		end loop;
+		
+		
+		-- reverse direction
+		sw(0) <= '1';
+		for i in 0 to (number_of_states + 2) loop
+			wait for slow_clk_wait;
+		end loop;
+		
+		
+		-- reset test
+		wait for 500 ns;
+		key(1) <= '0';
+		wait for 50 ns;
+		key(1) <= '1';
+		
+		-- more state transitions after reset
+		for i in 0 to 5 loop
+			wait for slow_clk_wait;
+		end loop;
+		
+		
+		
+	end process;
+
+
+        
+
+
 end architecture;
