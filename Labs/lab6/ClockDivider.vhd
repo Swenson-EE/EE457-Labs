@@ -32,7 +32,7 @@ begin
 			counter <= 0;
 			clk_out <= '0';
 		elsif rising_edge(clk) then
-			if counter = counts_per_tick then
+			if counter = (counts_per_tick / 2 - 1) then
 				clk_out <= not clk_out;
 				counter <= 0;
 			else
