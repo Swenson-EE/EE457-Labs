@@ -2,14 +2,19 @@ library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
+library work;
+use work.StateTypes.all;
+
+
 
 entity StateMachine is
 	port (
 		clk			: in std_logic;
 		reset			: in std_logic;
+		hold			: in std_logic;
 		direction	: in std_logic;
 		
-		state_out	: out std_logic_vector(3 downto 0)			-- 2^3 states
+		state_out	: out state_type
 	);
 end entity;
 
@@ -17,21 +22,7 @@ end entity;
 
 
 architecture rtl of StateMachine is
-	type state_type is (
-		STATE_0,		-- EE457 0		(Starting State)
-		STATE_1,		-- bEE45 1
-		STATE_2,		-- bbEE4 2
-		STATE_3,		-- bbbEE 3
-		STATE_4,		-- bbbbE 4
-		STATE_5,		-- bbbbb 5
-		STATE_6,		-- 7bbbb 6
-		STATE_7,		-- 57bbb 7
-		STATE_8,		-- 457bb 8
-		STATE_9		-- E457b 9
-		
-		-- Same as START	state
-		-- STATE_10,	-- EE457	10
-	);
+	
 	
 	signal current_state, next_state: state_type;
 begin
@@ -42,6 +33,8 @@ begin
 	begin
 		if reset = '0' then
 			current_state <= STATE_0;
+		elsif hold = '0' then
+			-- current_state <= current_state;
 		elsif rising_edge(clk) then
 			current_state <= next_state;
 		end if;
@@ -129,6 +122,6 @@ begin
 	end process;
 	
 	
-
+	state_out <= current_state;
 
 end architecture;

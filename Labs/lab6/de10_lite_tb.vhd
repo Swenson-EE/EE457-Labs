@@ -29,8 +29,8 @@ architecture tb of de10_lite_tb is
 -- end component;
 
 constant number_of_states: integer := 10;
-constant slow_clk_wait: time := 1 sec;
-
+-- constant slow_clk_wait: time := 1 sec;
+constant slow_clk_counts_per_tick: integer := 4;
 
 
 constant clk_per: time := 20 ns;				-- 50 MHz Clock
@@ -106,35 +106,46 @@ port map (
 	
 	vectors: process
 	begin
+		key(1) <= '1';	-- hold button
+		sw(0) <= '1';	-- direction switch
+	
 		-- Initial reset
-		key(1) <= '0';
+		key(0) <= '0';
 		wait for 50 ns;
-		key(1) <= '1';
-		wait for 1 us;
+		key(0) <= '1';
+		wait for 50 ns;
 		
 		-- Step through states in the forward direction
-		sw(0) <= '0';
+		sw(0) <= '1';
 		for i in 0 to (number_of_states + 2) loop
-			wait for slow_clk_wait;
+			-- wait for slow_clk_wait;
+			wait for (clk_per * slow_clk_counts_per_tick);
 		end loop;
+		
+		-- Hold test
+		key(1) <= '0';
+		wait for (clk_per * slow_clk_counts_per_tick);
+		key(1) <= '1';
 		
 		
 		-- reverse direction
-		sw(0) <= '1';
+		sw(0) <= '0';
 		for i in 0 to (number_of_states + 2) loop
-			wait for slow_clk_wait;
+			-- wait for slow_clk_wait;
+			wait for (clk_per * slow_clk_counts_per_tick);
 		end loop;
 		
 		
 		-- reset test
-		wait for 500 ns;
-		key(1) <= '0';
+		wait for 100 ns;
+		key(0) <= '0';
 		wait for 50 ns;
-		key(1) <= '1';
+		key(0) <= '1';
 		
 		-- more state transitions after reset
 		for i in 0 to 5 loop
-			wait for slow_clk_wait;
+			-- wait for slow_clk_wait;
+			wait for (clk_per * slow_clk_counts_per_tick);
 		end loop;
 		
 		
