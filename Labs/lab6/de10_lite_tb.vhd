@@ -124,7 +124,7 @@ port map (
 		
 		-- Hold test
 		key(1) <= '0';
-		wait for (clk_per * slow_clk_counts_per_tick);
+		wait for (clk_per * slow_clk_counts_per_tick * 4);
 		key(1) <= '1';
 		
 		
