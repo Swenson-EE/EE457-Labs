@@ -1,0 +1,468 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/EE457G/Labs/lab7
+Eany_edge_tb
+Z1 w1742260090
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8Testing_AnyEdge.vhd
+Z5 FTesting_AnyEdge.vhd
+l0
+L7
+VnEgjVRQP8<^L0>RBBjo9T3
+!s100 ZaRhXCZHLWmVOC2?=IgMg1
+Z6 OV;C;10.5b;63
+33
+Z7 !s110 1742344291
+!i10b 1
+Z8 !s108 1742344291.000000
+Z9 !s90 -reportprogress|300|-2008|Testing_AnyEdge.vhd|
+Z10 !s107 Testing_AnyEdge.vhd|
+!i113 1
+Z11 o-2008
+Z12 tExplicit 1 CvgOpt 0
+Atb
+Z13 DEx4 work 15 anyedgedetector 0 22 EUW_0a]GEOQ_DD88n55_>3
+Z14 DEx4 work 17 resetsynchronizer 0 22 d=EVHkUoBV[V9QD2[6W6I0
+R2
+R3
+DEx4 work 11 any_edge_tb 0 22 nEgjVRQP8<^L0>RBBjo9T3
+l26
+L23
+V:dlR43^1JDcHnIBDiF:Hh2
+!s100 g[SH7PlfHXeTU9h:fQ>oJ1
+R6
+33
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eanyedgedetector
+Z15 w1742260227
+R2
+R3
+R0
+Z16 8AnyEdgeDetector.vhd
+Z17 FAnyEdgeDetector.vhd
+l0
+L5
+VEUW_0a]GEOQ_DD88n55_>3
+!s100 [6l<_;NhEZ6mk4DhCe_=]0
+R6
+33
+R7
+!i10b 1
+R8
+Z18 !s90 -reportprogress|300|-2008|AnyEdgeDetector.vhd|
+Z19 !s107 AnyEdgeDetector.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+R13
+l22
+L20
+VA;KbS?]h35Med0F05i`e?0
+!s100 5;99M;NfdG5<hP1R`IF;42
+R6
+33
+R7
+!i10b 1
+R8
+R18
+R19
+!i113 1
+R11
+R12
+Ede10_lite_base
+Z20 w1742343978
+Z21 DPx4 work 11 washertypes 0 22 Waf?ObF7]DRH:>>l?IU5@2
+Z22 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z23 8de10_lite_base.vhd
+Z24 Fde10_lite_base.vhd
+l0
+L10
+V;MccD=oaGUbSzM6@ImUSm2
+!s100 4k4K4KVK3S^c?nmDDzR3N0
+R6
+33
+R7
+!i10b 1
+R8
+Z25 !s90 -reportprogress|300|-2008|de10_lite_base.vhd|
+Z26 !s107 de10_lite_base.vhd|
+!i113 1
+R11
+R12
+Ade10_lite
+Z27 DPx4 work 3 led 0 22 bW;aZhWfFGcAdYQQ1HX:M2
+Z28 DEx4 work 18 washerstatemachine 0 22 OYLceR8Y3E^mNHWOJA?bd2
+Z29 DEx4 work 17 inputsynchronizer 0 22 ;2LYEPJVaL3ULngK6oXfa3
+Z30 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z31 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z32 DEx4 work 7 tickgen 0 22 LVLl0?>H8OIA?W1d^D=5O0
+R14
+R21
+R22
+R2
+R3
+Z33 DEx4 work 14 de10_lite_base 0 22 ;MccD=oaGUbSzM6@ImUSm2
+l48
+L29
+VXYhlCDNGR27El6[EgEY;S3
+!s100 cGjY96GMejEY1X8QDF3mN1
+R6
+33
+R7
+!i10b 1
+R8
+R25
+R26
+!i113 1
+R11
+R12
+Ede10_lite_tb
+Z34 w1742344280
+R21
+R22
+R2
+R3
+R0
+Z35 8de10_lite_tb.vhd
+Z36 Fde10_lite_tb.vhd
+l0
+L9
+VD6dO]D;>3GZPB::>e^zmz1
+!s100 me]R3>bz4bB?lI[Ba8AD^0
+R6
+33
+R7
+!i10b 1
+R8
+Z37 !s90 -reportprogress|300|-2008|de10_lite_tb.vhd|
+Z38 !s107 de10_lite_tb.vhd|
+!i113 1
+R11
+R12
+Atb
+R33
+R21
+R22
+R2
+R3
+Z39 DEx4 work 12 de10_lite_tb 0 22 D6dO]D;>3GZPB::>e^zmz1
+l91
+L12
+Vn?lmP0XBon?7ham=oZ9am3
+!s100 f55in=ETWORVS88eV@4S43
+R6
+33
+R7
+!i10b 1
+R8
+R37
+R38
+!i113 1
+R11
+R12
+Egen_counter
+Z40 w1742176494
+R22
+R2
+R3
+R0
+Z41 8gen_counter.vhd
+Z42 Fgen_counter.vhd
+l0
+L5
+VF^TPESm`j;]IRBbfHCQzC1
+!s100 :fKKd5fnTAV8d0Qh;_G8B1
+R6
+33
+R7
+!i10b 1
+R8
+Z43 !s90 -reportprogress|300|-2008|gen_counter.vhd|
+Z44 !s107 gen_counter.vhd|
+!i113 1
+R11
+R12
+Artl
+R22
+R2
+R3
+DEx4 work 11 gen_counter 0 22 F^TPESm`j;]IRBbfHCQzC1
+l26
+L22
+V<a8k`UOmYC2bCOWi:@?Z40
+!s100 MV3dG[NR9Fh=co6kHch9U3
+R6
+33
+R7
+!i10b 1
+R8
+R43
+R44
+!i113 1
+R11
+R12
+Einputsynchronizer
+Z45 w1742196587
+R2
+R3
+R0
+Z46 8InputSynchronizer.vhd
+Z47 FInputSynchronizer.vhd
+l0
+L5
+V;2LYEPJVaL3ULngK6oXfa3
+!s100 V_RJ93IQS?@TmRQ<ig70o2
+R6
+33
+R7
+!i10b 1
+R8
+Z48 !s90 -reportprogress|300|-2008|InputSynchronizer.vhd|
+Z49 !s107 InputSynchronizer.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+R29
+l22
+L20
+Va9?Vd=4Y@:EZRVOmn52[g0
+!s100 :ZbOGUU@EbX]iGdb@ecIK2
+R6
+33
+R7
+!i10b 1
+R8
+R48
+R49
+!i113 1
+R11
+R12
+Pled
+R2
+R3
+Z50 w1742194585
+R0
+Z51 8LED.vhd
+Z52 FLED.vhd
+l0
+L6
+VbW;aZhWfFGcAdYQQ1HX:M2
+!s100 T[8aA`Wl2`4V1R@<i]ARK1
+R6
+33
+b1
+R7
+!i10b 1
+R8
+Z53 !s90 -reportprogress|300|-2008|LED.vhd|
+Z54 !s107 LED.vhd|
+!i113 1
+R11
+R12
+Bbody
+R27
+R2
+R3
+l0
+L22
+Vg`B6Mi=i^EgikGk7lPHL13
+!s100 FB]Y?Ae1V0R^O0l9WJgV=2
+R6
+33
+R7
+!i10b 1
+R8
+R53
+R54
+!i113 1
+R11
+R12
+Eresetsynchronizer
+Z55 w1742198274
+R2
+R3
+R0
+Z56 8ResetSynchronizer.vhd
+Z57 FResetSynchronizer.vhd
+l0
+L5
+Vd=EVHkUoBV[V9QD2[6W6I0
+!s100 @XM5G4=bbJ7aTVaMJ3UL12
+R6
+33
+R7
+!i10b 1
+R8
+Z58 !s90 -reportprogress|300|-2008|ResetSynchronizer.vhd|
+Z59 !s107 ResetSynchronizer.vhd|
+!i113 1
+R11
+R12
+Artl
+R2
+R3
+R14
+l20
+L18
+VD5j=IUJ6R_kS1FH;AlGIj0
+!s100 hZA4h1LbbU2Mz]AgiVV0Q1
+R6
+33
+R7
+!i10b 1
+R8
+R58
+R59
+!i113 1
+R11
+R12
+Etickgen
+Z60 w1742260630
+R30
+R31
+R2
+R3
+R0
+Z61 8TickGen.vhd
+Z62 FTickGen.vhd
+l0
+L6
+VLVLl0?>H8OIA?W1d^D=5O0
+!s100 e^T90[LoDG]ICWH_K>Dd:1
+R6
+33
+R7
+!i10b 1
+R8
+Z63 !s90 -reportprogress|300|-2008|TickGen.vhd|
+Z64 !s107 TickGen.vhd|
+!i113 1
+R11
+R12
+Artl
+R30
+R31
+R2
+R3
+R32
+l27
+L23
+V8nPk>=TW`J8XI^G0lS9W53
+!s100 HRHD:P97mhQ15e;0ezn3e1
+R6
+33
+R7
+!i10b 1
+R8
+R63
+R64
+!i113 1
+R11
+R12
+Ewasherstatemachine
+Z65 w1742343960
+R21
+R27
+R2
+R3
+R0
+Z66 8WasherStateMachine.vhd
+Z67 FWasherStateMachine.vhd
+l0
+L11
+VOYLceR8Y3E^mNHWOJA?bd2
+!s100 FLoA6PaLQeZ5c>8mA`GUo2
+R6
+32
+R7
+!i10b 1
+R8
+Z68 !s90 -reportprogress|300|WasherStateMachine.vhd|
+Z69 !s107 WasherStateMachine.vhd|
+!i113 1
+R12
+Artl
+R13
+R21
+R27
+R2
+R3
+R28
+l66
+L44
+V_kZoM7>GzN5^gUNggUaja3
+!s100 2oC87ke38QEKDoiCaRhB72
+R6
+32
+R7
+!i10b 1
+R8
+R68
+R69
+!i113 1
+R12
+Pwashertypes
+R2
+R3
+Z70 w1742342268
+R0
+Z71 8WasherTypes.vhd
+Z72 FWasherTypes.vhd
+l0
+L6
+VWaf?ObF7]DRH:>>l?IU5@2
+!s100 :RF?CRaOcZ@H7EnZ<QVb[2
+R6
+33
+b1
+R7
+!i10b 1
+R8
+Z73 !s90 -reportprogress|300|-2008|WasherTypes.vhd|
+Z74 !s107 WasherTypes.vhd|
+!i113 1
+R11
+R12
+Bbody
+R21
+R2
+R3
+l0
+L33
+VaBZ3c`dbY_mI9_NBP2f7Y0
+!s100 o=Ej;?SoD6d^6kHl]=Zk00
+R6
+33
+R7
+!i10b 1
+R8
+R73
+R74
+!i113 1
+R11
+R12

@@ -11,8 +11,10 @@ add wave -noupdate /de10_lite_tb/dut/hex5
 add wave -noupdate /de10_lite_tb/dut/key(0)
 add wave -noupdate /de10_lite_tb/dut/key(1)
 
+
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {20940 ns} 0}
+# WaveRestoreCursors {{Cursor 1} {20940 ns} 0}
+WaveRestoreCursors {{Cursor 1} {1 ns} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 260
 configure wave -valuecolwidth 100
@@ -28,4 +30,5 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {18271 ns} {35307 ns}
+# WaveRestoreZoom {18271 ns} {35307 ns}
+WaveRestoreZoom {1 ns} {2000 ns}

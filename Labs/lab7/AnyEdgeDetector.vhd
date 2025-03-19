@@ -25,12 +25,17 @@ begin
 	begin
 		if reset = '0' then
 			a <= '0';
+			detect_out <= '0';
 		elsif rising_edge(clk) then
+			detect_out <= async_in xor a;
 			a <= async_in;
+			
 		end if;
+		
+		
 	end process;
 	
-	detect_out <= async_in or a;
+	
 
 end architecture;
 
