@@ -108,6 +108,31 @@ begin
 			
 			
 		);
-
+	
+	
+	animation: entity work.WasherAnimation
+		generic map(
+			counts_per_tick => counts_per_tick
+		)
+		port map(
+			clk => MAX10_CLK1_50,
+			tick => tick,
+			
+			reset => reset,
+			
+			state => state,
+			cycle => cycle,
+			water => water,
+			
+			HEX0 => HEX0,
+			HEX1 => HEX1,
+			HEX2 => HEX2,
+			HEX3 => HEX3,
+			HEX4 => HEX4,
+			HEX5 => HEX5
+		);
+	
+	
+		
     
 end architecture;

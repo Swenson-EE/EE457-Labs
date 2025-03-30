@@ -136,7 +136,7 @@ begin
         -- #### the following default values may need to be changed ####
         input_sel <= "00";
         shift_sel <= "00";
-		  done <= '0';
+		done <= '0';
         clk_ena <= '0';
         sclr_n <= '1';
         

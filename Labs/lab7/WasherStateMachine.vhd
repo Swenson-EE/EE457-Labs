@@ -3,7 +3,6 @@ use ieee.std_logic_1164.all;
 
 
 library work;
-use work.LED.all;
 use work.WasherTypes.all;
 
 
@@ -43,22 +42,15 @@ end entity;
 
 architecture rtl of WasherStateMachine is
 	signal current_state, next_state: state_t := OFF;
-	--signal next_state: state_t;
-	
-	--signal start, stop: std_logic := 0;
-	
-	--signal cycle: cycle_t := standard_wash;
-	-- signal water: water_t := EMPTY;
 	
 	signal on_off_edge_detect: std_logic := '0';
 	signal emergency_stop_detect: std_logic := '0';
 	
-	-- signal tick_counter: integer := 0;
-	-- signal current_state_tick, next_state_tick: integer := 0;
 	
 	
 	signal running: std_logic := '0';
-	signal wash_done, spin_done, rinse_done: std_logic := '0';
+	signal wash_done: std_logic := '0';
+	signal spin_done: std_logic := '0'; 
 	
 	
 	
@@ -85,7 +77,7 @@ begin
 
 	
 	-- process to control state transitions
-	process(clk, reset, current_state, on_off_switch, water, emergency_stop)
+	process(clk, reset, current_state, on_off_switch, water, emergency_stop, wash_done, spin_done)
 	begin
 		if reset = '0' then
 			current_state <= OFF;
@@ -93,18 +85,8 @@ begin
 			
 		
 		elsif rising_edge(clk) then
---			case current_state is
---				when OFF =>
---					if (on_off_edge_detect = '1' and on_off_switch = '1') then
---						next_state <= FILL;
---					end if;
---					
---				when others =>	
---				
---				
---			end case;
 
-			-- determine running flag
+			-- determine flags
 			case current_state is
 				when OFF =>
 					if cycle_switch = '1' then
@@ -121,6 +103,11 @@ begin
 					if (on_off_edge_detect = '1' and on_off_switch = '0') then
 						running <= '0';
 					end if;
+					
+				when WASH =>
+						wash_done <= '1';
+				when SPIN =>
+					spin_done <= '1';
 					
 				when others =>
 					
@@ -146,6 +133,7 @@ begin
 						current_state <= next_state;
 						tick_counter <= 0;
 						
+						
 					else
 						tick_counter <= tick_counter + 1;
 						
@@ -162,102 +150,99 @@ begin
 	
 	
 	-- determine next_state based on current_state and inputs
-	process(current_state, tick_counter, running, cycle)
+	process(all)
 	begin
 		-- default assignments
 		next_state <= current_state;
 		water <= EMPTY;
 		
---		spin_done <= spin_done_out;
---		rinse_done <= rinse_done_out;
---		wash_done <= wash_done_out;
 		
 		
 		
 		case current_state is
-				when OFF =>
---					if (on_off_edge_detect = '1' and on_off_switch = '1') then
---						next_state <= FILL;
---					end if;
+			when OFF =>
 
-					if running = '1' then
-						next_state <= FILL;
-					end if;
-					
-					
+				if running = '1' then
+					next_state <= FILL;
+				end if;
 				
-				when FILL =>
-					if tick_counter = T_FILL then
-						water <= FULL;
-						
-						if wash_done = '0' then
-							next_state <= WASH;
-						else
-							next_state <= RINSE;
-						end if;
-						
-					elsif tick_counter > 0 then
-						water <= INTERMEDIATE;
+				
+			when FILL =>
+				if tick_counter = T_FILL then
+					water <= FULL;
+					
+					if wash_done = '0' then
+						next_state <= WASH;
 					else
-						water <= EMPTY;
+						next_state <= RINSE;
 					end if;
 					
-				when RINSE =>
-					water <= FULL;
-					rinse_done <= '1';
+				elsif tick_counter > 0 then
+					water <= INTERMEDIATE;
+				else
+					water <= EMPTY;
+				end if;
+				
+			when RINSE =>
+				water <= FULL;
+			
+				if tick_counter = T_RINSE then
+					
+					--rinse_done <= '1';
 					next_state <= SPIN;
-					
-					
-				when SPIN =>
-					water <= FULL;
-					spin_done <= '1';
+				end if;
+				
+				
+			when SPIN =>
+				water <= FULL;
+				
+				if tick_counter = T_SPIN then
+					--spin_done <= '1';
 					next_state <= DRAIN;
-					
-					
-				when WASH =>
-					water <= FULL;
-					wash_done <= '1';
-					
+				end if;
+				
+				
+			when WASH =>
+				water <= FULL;
+				--wash_done <= '1';
+				
+				if tick_counter = T_WASH then
 					if cycle = standard_wash then
 						next_state <= DRAIN;
 					else
 						next_state <= SPIN;
 					end if;
-				
-				when DRAIN =>
-					if tick_counter = T_DRAIN then
-						water <= EMPTY;
-						
-						if cycle = standard_wash and spin_done = '0' then
-							next_state <= FILL;
-						else
-							next_state <= DONE;
-						end if;
-						
-						
-					elsif tick_counter > 0 then
-						water <= INTERMEDIATE;
+				end if;
+			
+			when DRAIN =>
+				if tick_counter = T_DRAIN then
+					water <= EMPTY;
+					
+					if cycle = standard_wash and spin_done = '0' then
+						next_state <= FILL;
 					else
-						water <= FULL;
-					end if;
-				
-				when DONE =>
---					if next_state /= OFF then
---						if (on_off_edge_detect = '1' and on_off_switch = '0') then
---							next_state <= OFF;
---						end if;
---					end if;
-					if running = '0' then
-						next_state <= OFF;
+						next_state <= DONE;
 					end if;
 					
-				
-				when others =>
 					
+				elsif tick_counter > 0 then
+					water <= INTERMEDIATE;
+				else
+					water <= FULL;
+				end if;
+			
+			when DONE =>
+				if running = '0' then
+					next_state <= OFF;
+				end if;
 				
-			end case;
+			
+			when others =>
+				
+			
+		end case;
 		
-	
+		
 		
 	end process;
 	

@@ -10,8 +10,8 @@ vcom -2008 AnyEdgeDetector.vhd
 vcom -2008 LED.vhd
 vcom -2008 WasherTypes.vhd
 
-vcom WasherStateMachine.vhd
-
+vcom -2008 WasherStateMachine.vhd
+vcom -2008 WasherAnimation.vhd
 
 # Testing files
 vcom -2008 Testing_AnyEdge.vhd

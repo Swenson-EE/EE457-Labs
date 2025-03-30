@@ -37,12 +37,13 @@ constant clk_cycle:time := 2*clk_per;
 
 
 constant COUNTS_PER_TICK: integer := 8;
+--constant COUNTS_PER_TICK: integer := 50_000_000;
 
-constant T_FILL: integer := 3;
-constant T_WASH: integer := 6;
-constant T_RINSE: integer := 6;
-constant T_SPIN: integer := 6;
-constant T_DRAIN: integer := 3;
+--constant T_FILL: integer := 3;
+--constant T_WASH: integer := 6;
+--constant T_RINSE: integer := 6;
+--constant T_SPIN: integer := 6;
+--constant T_DRAIN: integer := 3;
 
 
 constant T_STATE_TRANSITION_TIME: time := CLK_PER * COUNTS_PER_TICK;
@@ -63,7 +64,7 @@ begin
 		when others => mult := 0;
 	end case;
 	
-	return CLK_PER * COUNTS_PER_TICK * mult;
+	return T_STATE_TRANSITION_TIME * mult;
 end function;
 
 
@@ -168,6 +169,14 @@ port map (
 		-- initial reset
 		key(1) <= '1'; -- emergency stop
 		key(0) <= '0'; -- reset
+		
+		hex0 <= "11111111";
+		hex1 <= "11111111";
+		hex2 <= "11111111";
+		hex3 <= "11111111";
+		hex4 <= "11111111";
+		hex5 <= "11111111";
+		
 		wait for 50 ns;
 		key(0) <= '1';
 		wait for 50 ns;
@@ -243,7 +252,6 @@ port map (
 				key(1) <= '0';
 				wait for 50 ns;
 				key(1) <= '1';
-				
 				wait for 50 ns;
 				
 				
@@ -270,9 +278,10 @@ port map (
 				
 				-- Emergency stop
 				key(1) <= '0';
-				wait for wait_for_state(DRAIN) / 2;
+				--wait for wait_for_state(DRAIN) / 2;
+				wait for 50 ns;
 				key(1) <= '1';
-				wait for wait_for_state(DRAIN) / 2;
+				wait for wait_for_state(DRAIN);
 				
 				wait for T_STATE_TRANSITION_TIME;
 				
@@ -298,11 +307,13 @@ port map (
 				
 		end case;
 		
+		-- Wiggle room after finishing
+		wait for T_STATE_TRANSITION_TIME * 6;
 		
 		sw(1) <= '0';
-		wait for T_STATE_TRANSITION_TIME * 3; -- Wait until done state transition to off
+		wait for T_STATE_TRANSITION_TIME * 6; -- Wait until done state transition to off
 		
-		wait for CLK_PER * 10;
+		wait for CLK_PER * 10; -- ensure proper time has passed
 		
 		
 		

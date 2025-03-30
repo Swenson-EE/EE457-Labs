@@ -16,6 +16,13 @@ package LED is
 	function fill_to_7seg(input_val: fill_led_t) return std_logic_vector;
 	function done_to_7seg(input_val: done_led_t) return std_logic_vector;
 	
+	
+	function count_to_spin(input_val: integer range 0 to 3) return spin_led_t;
+	function count_to_wash(input_val: integer range 0 to 3) return spin_led_t;
+	-- function count_to_wash(input_val: integer range 0 to 3) return spin_led_t;
+	
+	
+	
 end package;
 
 
@@ -31,7 +38,7 @@ package body LED is
 			when LEFT => seg_out := "11101111";
 			when SPIN_OFF => seg_out := "11111111";
 			when SPIN_ERR => seg_out := "10100011";
-			when others => seg_out := "0111111";
+			when others => seg_out := "01111111";
 		end case;
 		
 		return seg_out;
@@ -75,6 +82,40 @@ package body LED is
 		
 	
 	end function;
+	
+	
+	
+	
+	function count_to_spin(input_val: integer range 0 to 3) return spin_led_t is
+		variable spin_out: spin_led_t := SPIN_OFF;
+	begin
+		case input_val is
+			when 0 => spin_out := BOTTOM;
+			when 1 => spin_out := RIGHT;
+			when 2 => spin_out := MID;
+			when 3 => spin_out := LEFT;
+			when others => spin_out := SPIN_ERR;
+		end case;
+		
+		return spin_out;
+	end function;
+	
+	
+	function count_to_wash(input_val: integer range 0 to 3) return spin_led_t is
+		variable spin_out: spin_led_t := SPIN_OFF;
+	begin
+		case input_val is
+			when 0 => spin_out := LEFT;
+			when 1 => spin_out := LEFT;
+			when 2 => spin_out := RIGHT;
+			when 3 => spin_out := RIGHT;
+			when others => spin_out := SPIN_ERR;
+		end case;
+		
+		return spin_out;
+	end function;
+	
+	
 	
 	
 end package body;
