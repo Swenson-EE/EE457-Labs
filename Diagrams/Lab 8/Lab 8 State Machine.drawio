@@ -1,0 +1,292 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.1.3">
+  <diagram name="Page-1" id="1IWQ32ityqzZKr7m-1nI">
+    <mxGraphModel dx="794" dy="420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="57XIdjrO-INaemld1UCb-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-1" target="57XIdjrO-INaemld1UCb-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="227" />
+              <mxPoint x="240" y="311" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-25" value="&lt;div&gt;PWM_LED(0) = 60&lt;/div&gt;PWM_LED(1) = 100&lt;div&gt;PWM_LED(2) = 60&lt;/div&gt;&lt;div&gt;PWM_LED(3) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(4) = 10&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-11">
+          <mxGeometry x="-0.0674" relative="1" as="geometry">
+            <mxPoint x="60" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-1" value="State 0" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="159" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-2" target="57XIdjrO-INaemld1UCb-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="367" />
+              <mxPoint x="240" y="451" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-28" value="&lt;div&gt;PWM_LED(0) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(1) = 60&lt;/div&gt;PWM_LED(2) = 100&lt;div&gt;PWM_LED(3) = 60&lt;/div&gt;&lt;div&gt;PWM_LED(4) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(5) = 10&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-13">
+          <mxGeometry x="-0.049" y="-1" relative="1" as="geometry">
+            <mxPoint x="61" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-2" target="57XIdjrO-INaemld1UCb-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="311" />
+              <mxPoint x="160" y="227" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-24" value="PWM_LED(0) = 100&lt;div&gt;PWM_LED(1) = 60&lt;/div&gt;&lt;div&gt;PWM_LED(2) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(3) = 10&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-21">
+          <mxGeometry x="0.0127" y="2" relative="1" as="geometry">
+            <mxPoint x="-58" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-2" value="State 1" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="299" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-3" target="57XIdjrO-INaemld1UCb-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="507" />
+              <mxPoint x="240" y="591" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-31" value="&lt;div&gt;PWM_LED(0) = 10&lt;/div&gt;&lt;div&gt;PWM_LED(1) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(2) = 60&lt;/div&gt;PWM_LED(3) = 100&lt;div&gt;PWM_LED(4) = 60&lt;/div&gt;&lt;div&gt;PWM_LED(5) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(6) = 10&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-15">
+          <mxGeometry x="-0.0858" y="-3" relative="1" as="geometry">
+            <mxPoint x="63" y="5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-3" target="57XIdjrO-INaemld1UCb-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="451" />
+              <mxPoint x="160" y="367" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-27" value="&lt;div&gt;PWM_LED(0) = 60&lt;/div&gt;PWM_LED(1) = 100&lt;div&gt;PWM_LED(2) = 60&lt;/div&gt;&lt;div&gt;PWM_LED(3) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(4) = 10&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-26">
+          <mxGeometry x="-0.0445" y="3" relative="1" as="geometry">
+            <mxPoint x="-57" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-3" value="State 2" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="439" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-4" target="57XIdjrO-INaemld1UCb-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="647" />
+              <mxPoint x="240" y="731" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-34" value="&lt;div&gt;PWM_LED(1) = 10&lt;/div&gt;&lt;div&gt;PWM_LED(2) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(3) = 60&lt;/div&gt;PWM_LED(4) = 100&lt;div&gt;PWM_LED(5) = 60&lt;/div&gt;&lt;div&gt;PWM_LED(6) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(7) = 10&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-17">
+          <mxGeometry x="-0.0429" y="-3" relative="1" as="geometry">
+            <mxPoint x="63" y="3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-4" target="57XIdjrO-INaemld1UCb-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="591" />
+              <mxPoint x="160" y="507" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-30" value="&lt;div&gt;PWM_LED(0) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(1) = 60&lt;/div&gt;PWM_LED(2) = 100&lt;div&gt;PWM_LED(3) = 60&lt;/div&gt;&lt;div&gt;PWM_LED(4) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(5) = 10&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-29">
+          <mxGeometry x="0.0127" y="-2" relative="1" as="geometry">
+            <mxPoint x="-62" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-4" value="State 3" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="579" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-5" target="57XIdjrO-INaemld1UCb-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="787" />
+              <mxPoint x="240" y="871" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-37" value="&lt;div&gt;PWM_LED(2) = 10&lt;/div&gt;&lt;div&gt;PWM_LED(3) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(4) = 60&lt;/div&gt;PWM_LED(5) = 100&lt;div&gt;PWM_LED(6) = 60&lt;/div&gt;&lt;div&gt;PWM_LED(7) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(8) = 10&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-19">
+          <mxGeometry x="0.0306" y="-2" relative="1" as="geometry">
+            <mxPoint x="62" y="9" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-5" target="57XIdjrO-INaemld1UCb-4">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="731" />
+              <mxPoint x="160" y="647" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-33" value="&lt;div&gt;PWM_LED(0) = 10&lt;/div&gt;&lt;div&gt;PWM_LED(1) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(2) = 60&lt;/div&gt;PWM_LED(3) = 100&lt;div&gt;PWM_LED(4) = 60&lt;/div&gt;&lt;div&gt;PWM_LED(5) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(6) = 10&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-32">
+          <mxGeometry x="0.2417" relative="1" as="geometry">
+            <mxPoint x="-60" y="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-5" value="State 4" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="719" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-6" target="57XIdjrO-INaemld1UCb-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="871" />
+              <mxPoint x="160" y="787" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-36" value="&lt;div&gt;PWM_LED(1) = 10&lt;/div&gt;&lt;div&gt;PWM_LED(2) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(3) = 60&lt;/div&gt;PWM_LED(4) = 100&lt;div&gt;PWM_LED(5) = 60&lt;/div&gt;&lt;div&gt;PWM_LED(6) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(7) = 10&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-35">
+          <mxGeometry x="0.0827" y="1" relative="1" as="geometry">
+            <mxPoint x="-59" y="6" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-6" target="57XIdjrO-INaemld1UCb-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="927" />
+              <mxPoint x="240" y="1011" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-41" value="&lt;div&gt;PWM_LED(3) = 10&lt;/div&gt;&lt;div&gt;PWM_LED(4) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(5) = 60&lt;/div&gt;PWM_LED(6) = 100&lt;div&gt;PWM_LED(7) = 60&lt;/div&gt;&lt;div&gt;PWM_LED(8) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(9) = 10&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-40">
+          <mxGeometry x="-0.0551" y="-3" relative="1" as="geometry">
+            <mxPoint x="63" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-6" value="State 5" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="859" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-7" target="57XIdjrO-INaemld1UCb-6">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="1011" />
+              <mxPoint x="160" y="927" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-39" value="&lt;div&gt;PWM_LED(2) = 10&lt;/div&gt;&lt;div&gt;PWM_LED(3) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(4) = 60&lt;/div&gt;PWM_LED(5) = 100&lt;div&gt;PWM_LED(6) = 60&lt;/div&gt;&lt;div&gt;PWM_LED(7) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(8) = 10&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-38">
+          <mxGeometry x="0.0445" y="3" relative="1" as="geometry">
+            <mxPoint x="-57" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-7" target="57XIdjrO-INaemld1UCb-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="1067" />
+              <mxPoint x="240" y="1151" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-45" value="&lt;div&gt;PWM_LED(4) = 10&lt;/div&gt;&lt;div&gt;PWM_LED(5) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(6) = 60&lt;/div&gt;PWM_LED(7) = 100&lt;div&gt;PWM_LED(8) = 60&lt;/div&gt;&lt;div&gt;PWM_LED(9) = 20&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-44">
+          <mxGeometry x="0.0919" y="-5" relative="1" as="geometry">
+            <mxPoint x="65" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-7" value="State 6" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="999" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-8" target="57XIdjrO-INaemld1UCb-7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="1151" />
+              <mxPoint x="160" y="1067" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-43" value="&lt;div&gt;PWM_LED(3) = 10&lt;/div&gt;&lt;div&gt;PWM_LED(4) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(5) = 60&lt;/div&gt;PWM_LED(6) = 100&lt;div&gt;PWM_LED(7) = 60&lt;/div&gt;&lt;div&gt;PWM_LED(8) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(9) = 10&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-42">
+          <mxGeometry x="0.0572" y="1" relative="1" as="geometry">
+            <mxPoint x="-59" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-8" target="57XIdjrO-INaemld1UCb-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="1207" />
+              <mxPoint x="240" y="1291" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-50" value="&lt;div&gt;PWM_LED(5) = 10&lt;/div&gt;&lt;div&gt;PWM_LED(6) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(7) = 60&lt;/div&gt;PWM_LED(8) = 100&lt;div&gt;PWM_LED(9) = 60&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-48">
+          <mxGeometry x="-0.0613" y="2" relative="1" as="geometry">
+            <mxPoint x="58" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-8" value="State 7" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="1139" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-9" target="57XIdjrO-INaemld1UCb-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="1291" />
+              <mxPoint x="160" y="1207" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-47" value="&lt;div&gt;PWM_LED(4) = 10&lt;/div&gt;&lt;div&gt;PWM_LED(5) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(6) = 60&lt;/div&gt;PWM_LED(7) = 100&lt;div&gt;PWM_LED(8) = 60&lt;/div&gt;&lt;div&gt;PWM_LED(9) = 20&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-46">
+          <mxGeometry x="0.0318" y="2" relative="1" as="geometry">
+            <mxPoint x="-58" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-9" target="57XIdjrO-INaemld1UCb-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="240" y="1347" />
+              <mxPoint x="240" y="1431" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-54" value="&lt;div&gt;PWM_LED(6) = 10&lt;/div&gt;&lt;div&gt;PWM_LED(7) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(8) = 60&lt;/div&gt;PWM_LED(9) = 100&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-53">
+          <mxGeometry x="-0.0551" y="1" relative="1" as="geometry">
+            <mxPoint x="59" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-9" value="State 8" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="1279" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=1;entryDx=0;entryDy=0;curved=1;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-10" target="57XIdjrO-INaemld1UCb-9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="1431" />
+              <mxPoint x="160" y="1347" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-52" value="&lt;div&gt;PWM_LED(5) = 10&lt;/div&gt;&lt;div&gt;PWM_LED(6) = 20&lt;/div&gt;&lt;div&gt;PWM_LED(7) = 60&lt;/div&gt;PWM_LED(8) = 100&lt;div&gt;PWM_LED(9) = 60&lt;/div&gt;&lt;div&gt;others = 0&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-51">
+          <mxGeometry x="0.0382" y="1" relative="1" as="geometry">
+            <mxPoint x="-59" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-10" value="State 9" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="159" y="1419" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="57XIdjrO-INaemld1UCb-57" target="57XIdjrO-INaemld1UCb-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-57" value="Start" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="160" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-59" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="57XIdjrO-INaemld1UCb-1">
+          <mxGeometry width="100" relative="1" as="geometry">
+            <mxPoint x="80" y="200" as="sourcePoint" />
+            <mxPoint x="80" y="269" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="57XIdjrO-INaemld1UCb-60" value="reset=0" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="57XIdjrO-INaemld1UCb-59">
+          <mxGeometry x="-0.0242" y="4" relative="1" as="geometry">
+            <mxPoint x="1" y="-4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
