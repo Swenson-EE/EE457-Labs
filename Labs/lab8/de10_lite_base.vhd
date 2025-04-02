@@ -45,7 +45,11 @@ architecture de10_lite of de10_lite_base is
 	
 	
 	constant pwm_duty_cycles: integer_vector(3 downto 0) := (DUTY100, DUTY60, DUTY20, DUTY10);
+	--constant pwm_duty_cycles: integer_vector(3 downto 0) := (DUTY10, DUTY20, DUTY60, DUTY100);
 	signal pwm_signals: std_logic_vector(3 downto 0) := (others => '0');
+	
+	
+	signal led_intermediate: std_logic_vector(9 downto 0) := "0000000000";
 	
 	
 	--signal duty_cycles: LED_Array := (others => 0);
@@ -138,9 +142,11 @@ begin
 			state => state,
 			pwm_signals => pwm_signals,
 			
-			LEDR => LEDR
+			LEDR => led_intermediate
 		);
 		
+		
+	LEDR <= led_intermediate;
 	
     
 end architecture;

@@ -37,7 +37,7 @@ architecture tb of de10_lite_tb is
 
 constant slow_speed_count: integer range 0 to 50_000_000 := 800;
 constant fast_speed_count: integer range 0 to 50_000_000 := 200;
-constant pwm_counts_per_tick: integer range 0 to 50_000_000 := 1;
+constant pwm_counts_per_tick: integer range 0 to 50_000_000 := 2;
 
 
 constant CLK_PER: time := 20 ns;

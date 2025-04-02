@@ -11,7 +11,7 @@ vcom -2008 TwoSpeedTickCounter.vhd
 
 vcom -2008 PWM.vhd
 vcom -2008 StateMachine.vhd
-
+vcom -2008 StateMachineHandler.vhd
 
 
 
