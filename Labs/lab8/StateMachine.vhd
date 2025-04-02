@@ -13,7 +13,7 @@ entity StateMachine is
 		reset			: in std_logic;
 		tick			: in std_logic;
 		
-		duty_cycle_state : out duty_cycle_states_t
+		state 		: out state_t
 		
 	);
 
@@ -22,7 +22,7 @@ end entity;
 
 
 architecture rtl of StateMachine is
-	signal current_state, next_state: duty_cycle_states_t := S0;
+	signal current_state, next_state: state_t := S0;
 	
 	signal direction: std_logic := '1';
 	
@@ -55,7 +55,7 @@ begin
 
 	
 	
-	determine_next: process(clk, reset)
+	determine_next: process(direction, current_state)
 	begin
 		-- forward direction
 		if direction = '1' then
@@ -100,7 +100,7 @@ begin
 	
 
 	
-	duty_cycle_state <= current_state;
+	state <= current_state;
 	
 end architecture;
 

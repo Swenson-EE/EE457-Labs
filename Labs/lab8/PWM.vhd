@@ -10,10 +10,9 @@ use work.CommonTypes.all;
 entity PWM is
 	
 	
-	
 	port (
-		clk:				in std_logic; -- system clock
-		reset:			in std_logic; -- reset pwm count to 0
+		clk:					in std_logic; -- system clock
+		reset:				in std_logic; -- reset pwm count to 0
 		
 		tick:				in std_logic; -- tick for pwm
 		duty_cycle:		in integer range 0 to PWM_MAX; -- duty cycle input

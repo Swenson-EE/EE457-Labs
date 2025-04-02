@@ -12,7 +12,7 @@ entity de10_lite_base is
 		--counts_per_tick: positive := 50_000_000 / 10
 		slow_speed_count: 		integer range 0 to 50_000_000 := 50_000_000;
 		fast_speed_count: 		integer range 0 to 50_000_000 := 25_000_000;
-		pwm_counts_per_tick: 	integer range 0 to 50_000_000 := 10_000_000
+		pwm_counts_per_tick: 	integer range 0 to 50_000_000 := 5000
 	);
 	port (
 		--clocks
@@ -29,15 +29,26 @@ end entity;
 
 architecture de10_lite of de10_lite_base is
 
+	
+
+
+
    signal state_tick: std_logic := '0';
 	signal pwm_tick: std_logic := '0';
 	
 	signal reset: std_logic := '0';
 	signal speed: std_logic := '0';
 	
-	signal duty_cycle_state: duty_cycle_states_t;
+	signal state: state_t;
 	
-	signal duty_cycles: LED_Array := (others => 0);
+	--signal PWM100, PWM60, PWM20, PWM10: std_logic := '0';
+	
+	
+	constant pwm_duty_cycles: integer_vector(3 downto 0) := (DUTY100, DUTY60, DUTY20, DUTY10);
+	signal pwm_signals: std_logic_vector(3 downto 0) := (others => '0');
+	
+	
+	--signal duty_cycles: LED_Array := (others => 0);
 	
 	
 
@@ -94,6 +105,22 @@ begin
 		);
 		
 		
+	GEN_PWM: for i in 0 to 3 generate
+		pwm_instance: entity work.PWM
+			port map(
+				clk => MAX10_CLK1_50,
+				reset => reset,
+				
+				tick => pwm_tick,
+				duty_cycle => pwm_duty_cycles(i),
+				
+				pwm_out => pwm_signals(i)
+				
+			);
+
+	end generate;
+		
+		
 		
 	state_machine: entity work.StateMachine
 		port map(
@@ -101,7 +128,17 @@ begin
 			reset => reset,
 			tick => state_tick,
 			
-			duty_cycle_state => duty_cycle_state
+			state => state
+		);
+		
+	state_handler: entity work.StateMachineHandler
+		port map(
+			clk => MAX10_CLK1_50,
+			reset => reset,
+			state => state,
+			pwm_signals => pwm_signals,
+			
+			LEDR => LEDR
 		);
 		
 	

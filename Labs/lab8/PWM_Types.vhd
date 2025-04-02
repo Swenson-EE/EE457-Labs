@@ -7,14 +7,16 @@ package PWM_Types is
 	
 	
 	
-	type duty_cycle_states_t is (S0, S1, S2, S3, S4, S5, S6, S7, S8, S9, S_Err);
+	
 
 
-
+	
 
 	constant PWM_MAX: integer := 100;
 	
-
+	
+	--type integer_vector is array (natural range <>) of integer;
+	
 	type LED_Array is array (0 to PWM_MAX) of integer;
 	
 	
@@ -25,6 +27,11 @@ package PWM_Types is
 	constant DUTY20: PWM_Int := 20;
 	constant DUTY60: PWM_Int := 60;
 	constant DUTY100: PWM_Int := 100;
+	
+	
+	
+	
+	
 	
 
 
