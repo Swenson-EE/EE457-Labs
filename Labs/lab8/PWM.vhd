@@ -9,15 +9,17 @@ use work.CommonTypes.all;
 
 entity PWM is
 	
-	
+	generic (
+		active:			std_logic := '0'	-- To be able to change the active signal (since LEDs are active LOW)
+	);
 	port (
 		clk:					in std_logic; -- system clock
 		reset:				in std_logic; -- reset pwm count to 0
 		
-		tick:				in std_logic; -- tick for pwm
-		duty_cycle:		in integer range 0 to PWM_MAX; -- duty cycle input
+		tick:					in std_logic; -- tick for pwm
+		duty_cycle:			in integer range 0 to PWM_MAX; -- duty cycle input
 		
-		pwm_out:			out std_logic -- output signal	
+		pwm_out:				out std_logic -- output signal	
 		
 		
 	);
@@ -48,8 +50,8 @@ begin
 	end process;
 
 	
-	pwm_out <= '1' when (count < duty_cycle) else '0';
-		
+	--pwm_out <= '1' when (count < duty_cycle) else '0';
+	pwm_out <= active when (count < duty_cycle) else NOT(active);
 	
 
 

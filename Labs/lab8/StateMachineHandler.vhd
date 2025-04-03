@@ -56,47 +56,41 @@ begin
 	
 	
 	
-	led_map: process(clk, reset, position)
+	led_map: process(clk, reset, position, pwm_signals)
 	begin
-		if reset then
-			LEDR <= (others => '0'); -- Clear all LEDs
-		elsif rising_edge(clk) then
-			LEDR <= (others => '0'); -- Clear all LEDs
-			
-			LEDR(position) <= pwm_signals(3); -- 100 PWM signal
-			
-			
-			
-			-- Lagging LEDs
-			if position >= DUTY_LAG_LED_1_MIN_POS then
-				LEDR(position - 1) <= pwm_signals(2);			
-			end if;
-			
-			if position >= DUTY_LAG_LED_2_MIN_POS then
-				LEDR(position - 2) <= pwm_signals(1);
-			end if;
-			
-			if position >= DUTY_LAG_LED_3_MIN_POS then
-				LEDR(position - 3) <= pwm_signals(0);
-			end if;
-
-			
-				
-			-- Leading LEDs
-			if position >= DUTY_LEAD_LED_1_MIN_POS then
-				LEDR(position + 1) <= pwm_signals(2);			
-			end if;
-			
-			if position >= DUTY_LEAD_LED_2_MIN_POS then
-				LEDR(position + 2) <= pwm_signals(1);
-			end if;
-			
-			if position >= DUTY_LEAD_LED_3_MIN_POS then
-				LEDR(position + 3) <= pwm_signals(0);
-			end if;
-			
+		LEDR <= (others => NOT(LED_ACTIVE)); -- Clear all LEDs
+		
+		LEDR(position) <= pwm_signals(3); -- 100 PWM signal
+		
+		
+		
+		-- Lagging LEDs
+		if position >= DUTY_LAG_LED_1_MIN_POS then
+			LEDR(position - 1) <= pwm_signals(2);			
 		end if;
 		
+		if position >= DUTY_LAG_LED_2_MIN_POS then
+			LEDR(position - 2) <= pwm_signals(1);
+		end if;
+		
+		if position >= DUTY_LAG_LED_3_MIN_POS then
+			LEDR(position - 3) <= pwm_signals(0);
+		end if;
+
+		
+			
+		-- Leading LEDs
+		if position <= DUTY_LEAD_LED_1_MIN_POS then
+			LEDR(position + 1) <= pwm_signals(2);			
+		end if;
+		
+		if position <= DUTY_LEAD_LED_2_MIN_POS then
+			LEDR(position + 2) <= pwm_signals(1);
+		end if;
+		
+		if position <= DUTY_LEAD_LED_3_MIN_POS then
+			LEDR(position + 3) <= pwm_signals(0);
+		end if;
 		
 		
 		

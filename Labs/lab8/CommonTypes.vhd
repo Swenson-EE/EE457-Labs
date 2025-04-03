@@ -29,6 +29,11 @@ package CommonTypes is
 	
 	
 	
+	
+	constant LED_ACTIVE: std_logic := '0';
+	
+	
+	
 end package;
 
 
