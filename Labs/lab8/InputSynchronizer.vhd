@@ -25,7 +25,7 @@ architecture rtl of InputSynchronizer is
 begin
 	process (clk, reset)
 	begin
-		if reset = RESET_ACTIVE then
+		if reset = BUTTON_ACTIVE then
 			stage1 <= '0';
 			stage2 <= '0';
 		elsif rising_edge(clk) then

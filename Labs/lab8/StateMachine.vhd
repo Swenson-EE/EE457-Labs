@@ -11,6 +11,7 @@ entity StateMachine is
 	port (
 		clk			: in std_logic;
 		reset			: in std_logic;
+		hold			: in std_logic;
 		tick			: in std_logic;
 		
 		state 		: out state_t
@@ -29,10 +30,12 @@ architecture rtl of StateMachine is
 begin
 
 	-- state machine
-	state_machine: process(clk, reset)
+	state_machine: process(clk, reset, hold)
 	begin
-		if reset = RESET_ACTIVE then
+		if reset = BUTTON_ACTIVE then
 			current_state <= S0;
+		elsif hold = BUTTON_ACTIVE then
+			
 		elsif rising_edge(clk) then
 			if tick = '1' then
 				current_state <= next_state;

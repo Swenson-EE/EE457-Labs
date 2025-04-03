@@ -36,8 +36,10 @@ architecture de10_lite of de10_lite_base is
    signal state_tick: std_logic := '0';
 	signal pwm_tick: std_logic := '0';
 	
-	signal reset: std_logic := '0';
-	signal speed: std_logic := '0';
+	signal reset: 	std_logic := NOT(BUTTON_ACTIVE);
+	signal hold: 	std_logic := NOT(BUTTON_ACTIVE);
+	
+	signal speed: 	std_logic := '0';
 	
 	signal state: state_t;
 	
@@ -59,6 +61,14 @@ begin
 			reset => reset
 		);
 		
+	hold_sync: entity work.InputSynchronizer
+		port map(
+			clk => MAX10_CLK1_50,
+			reset => reset,
+			async_in => KEY(1),
+			sync_out => hold
+		);
+		
 	speed_sync: entity work.InputSynchronizer
 		port map(
 			clk => MAX10_CLK1_50,
@@ -68,15 +78,7 @@ begin
 		);
 
 	
---	tick_counter: entity work.Counter
---		generic map(
---			counts_per_tick => counts_per_tick
---		)
---		port map(
---			clk => MAX10_CLK1_50,
---			reset => reset,
---			tick => tick
---		);
+	
 	
 	two_speed_tick_counter: entity work.TwoSpeedTickCounter
 		generic map(
@@ -124,6 +126,7 @@ begin
 		port map(
 			clk => MAX10_CLK1_50,
 			reset => reset,
+			hold => hold,
 			tick => state_tick,
 			
 			state => state

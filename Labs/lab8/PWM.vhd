@@ -10,7 +10,7 @@ use work.CommonTypes.all;
 entity PWM is
 	
 	generic (
-		active:			std_logic := '0'	-- To be able to change the active signal (since LEDs are active LOW)
+		active:			std_logic := '1'	-- To be able to change the active signal (since LEDs are active LOW)
 	);
 	port (
 		clk:					in std_logic; -- system clock
@@ -34,7 +34,7 @@ begin
 
 	pwm_count: process(clk, reset)
 	begin
-		if reset = RESET_ACTIVE then
+		if reset = BUTTON_ACTIVE then
 			count <= 0;
 		elsif rising_edge(clk) then
 			

@@ -80,15 +80,15 @@ begin
 		
 			
 		-- Leading LEDs
-		if position <= DUTY_LEAD_LED_1_MIN_POS then
+		if position <= DUTY_LEAD_LED_1_MAX_POS then
 			LEDR(position + 1) <= pwm_signals(2);			
 		end if;
 		
-		if position <= DUTY_LEAD_LED_2_MIN_POS then
+		if position <= DUTY_LEAD_LED_2_MAX_POS then
 			LEDR(position + 2) <= pwm_signals(1);
 		end if;
 		
-		if position <= DUTY_LEAD_LED_3_MIN_POS then
+		if position <= DUTY_LEAD_LED_3_MAX_POS then
 			LEDR(position + 3) <= pwm_signals(0);
 		end if;
 		

@@ -46,7 +46,7 @@ begin
 
 	counter: process(clk, reset)
 	begin
-		if reset = RESET_ACTIVE then
+		if reset = BUTTON_ACTIVE then
 			count <= 0;
 			--max_count <= max;
 		elsif rising_edge(clk) then

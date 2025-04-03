@@ -31,7 +31,7 @@ architecture rtl of Counter is
 begin
 	process (clk, reset)
 	begin
-		if reset = RESET_ACTIVE then
+		if reset = BUTTON_ACTIVE then
 			counter <= 0;
 		elsif rising_edge(clk) then
 			if counter = (counts_per_tick - 1) then
