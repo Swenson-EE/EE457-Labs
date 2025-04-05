@@ -32,6 +32,9 @@ begin
 	
 	
 	display_process: process(clk, reset)
+		variable address10: integer;
+		variable address1: integer;
+	
 	begin
 		if reset = '0' then
 			HEX0 <= HEX_CLEAR;
@@ -50,16 +53,24 @@ begin
 			
 			
 			-- Hex 5 and 4 display the address
-			HEX5 <= DecodeDecimalToSevenSeg( IntegerToDecimal( get10place( to_integer(unsigned(address)) ) ) );
-			HEX4 <= DecodeDecimalToSevenSeg( IntegerToDecimal( get1place( to_integer(unsigned(address)) ) ) );
+			--HEX5 <=  DecodeDecimalToSevenSeg( IntegerToDecimal( get10place( to_integer(unsigned(address)) ) ) );
+			--HEX4 <=  DecodeDecimalToSevenSeg( IntegerToDecimal( get1place( to_integer(unsigned(address)) ) ) );
+			address10 := get10place(to_integer(unsigned(address)));
+			address1 := get1place(to_integer(unsigned(address)));
+			
+			HEX5 <= DecodeDecimalToSevenSeg(address10);
+			HEX4 <= DecodeDecimalToSevenSeg(address1);
+			
+			--HEX5 <= DecodeVectorToSevenSeg( std_logic_vector(to_unsigned( get10place( to_integer(address) ) ) ) );
 			
 			-- Hex 2 display data in
-			HEX2 <= DecodeDecimalToSevenSeg( IntegerToDecimal( to_integer(unsigned(data_in)) ) );
+			--HEX2 <=  DecodeDecimalToSevenSeg( IntegerToDecimal( to_integer(unsigned(data_in)) ) );
+			HEX2 <= DecodeVectorToSevenSeg(data_in);
 			
 			
 			-- Hex 0 display data out
-			HEX0 <= DecodeDecimalToSevenSeg( IntegerToDecimal( to_integer(unsigned(data_out)) ) );
-			
+			--HEX0 <=  DecodeDecimalToSevenSeg( IntegerToDecimal( to_integer(unsigned(data_out)) ) );
+			HEX0 <= DecodeVectorToSevenSeg(data_out);
 			
 			
 			

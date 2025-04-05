@@ -12,13 +12,12 @@ package SevenSegment is
 	-- Get's 10's place of an integer. Assumes value less than 100
 	function get10place(input_val: integer) return integer;
 	
-	
-	
-	
-	-- Translates integer value to sevenseg decimal type
-	function IntegerToDecimal(input_val: integer) return SevenSegDec;
-	
-	function DecodeDecimalToSevenSeg(input_val: SevenSegDec) return std_logic_vector;
+	-- Translates a 4 bit logic vector into a seven segment value
+	function DecodeVectorToSevenSeg(input_val: std_logic_vector(3 downto 0)) return std_logic_vector;
+		
+	-- Translates a decimal from 0 to 9 into seven segment value
+	-- Any value above 9 just returns the default E
+	function DecodeDecimalToSevenSeg(input_val: integer) return std_logic_vector;
 	
 	
 end package;
@@ -40,39 +39,49 @@ package body SevenSegment is
 	
 	
 	
-	function IntegerToDecimal(input_val: integer) return SevenSegDec is
+	-- Translates a 4 bit logic vector into a seven segment value
+	function DecodeVectorToSevenSeg(input_val: std_logic_vector(3 downto 0)) return std_logic_vector is
 	begin
 		case input_val is
-			when 0 => return d0;
-			when 1 => return d1;
-			when 2 => return d2;
-			when 3 => return d3;
-			when 4 => return d4;
-			when 5 => return d5;
-			when 6 => return d6;
-			when 7 => return d7;
-			when 8 => return d8;
-			when 9 => return d9;
-			when others => return dError;
+			when "0000"	=> return "11000000";
+			when "0001" => return "11111001";
+			when "0010" => return "10100100";
+			when "0011" => return "10110000";
+			when "0100" => return "10011001";
+			when "0101" => return "10010010";
+			when "0110" => return "10000010";
+			when "0111" => return "11111000";
+			when "1000" => return "10000000";
+			when "1001" => return "10010000";
+			when "1010" => return "10001000";
+			when "1011" => return "10000011";
+			when "1100" => return "11000110";
+			when "1101" => return "10100001";
+			when "1110" => return "10000110";
+			when "1111" => return "10001110";
+	
+			when others => return "00000000";
+		
 		end case;
 		
-	
 	end function;
-
-
-	function DecodeDecimalToSevenSeg(input_val: SevenSegDec) return std_logic_vector is
+	
+	
+	-- Translates a decimal from 0 to 9 into seven segment value
+	-- Any value above 9 just returns the default E
+	function DecodeDecimalToSevenSeg(input_val: integer) return std_logic_vector is
 	begin
 		case input_val is
-			when d0 => return "11000000";
-			when d1 => return "11111001";
-			when d2 => return "10100100";
-			when d3 => return "10110000";
-			when d4 => return "10011001";
-			when d5 => return "10010010";
-			when d6 => return "10000010";
-			when d7 => return "11111000";
-			when d8 => return "10000000";
-			when d9 => return "10010000";
+			when 0 => return "11000000";
+			when 1 => return "11111001";
+			when 2 => return "10100100";
+			when 3 => return "10110000";
+			when 4 => return "10011001";
+			when 5 => return "10010010";
+			when 6 => return "10000010";
+			when 7 => return "11111000";
+			when 8 => return "10000000";
+			when 9 => return "10010000";
 			when others => return "10000110";
 		
 		end case;

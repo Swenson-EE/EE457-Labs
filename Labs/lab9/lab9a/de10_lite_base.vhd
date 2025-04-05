@@ -83,10 +83,20 @@ begin
 			
 			address => sw_sync(8 downto 4),
 			
-			data_in => sw(3 downto 0),
-			data_out => data
+			data_in => sw_sync(3 downto 0),
+			data_out => data,
+			
+			HEX0 => HEX0,
+			HEX1 => HEX1,
+			HEX2 => HEX2,
+			HEX3 => HEX3,
+			HEX4 => HEX4,
+			HEX5 => HEX5
+			
 		);
+		
+	--HEX0(3 downto 0) <= data;
 	
-	
+	--LEDR(0) <= '1';
     
 end architecture;
