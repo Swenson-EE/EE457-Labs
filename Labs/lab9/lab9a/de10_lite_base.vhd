@@ -94,9 +94,5 @@ begin
 			HEX5 => HEX5
 			
 		);
-		
-	--HEX0(3 downto 0) <= data;
-	
-	--LEDR(0) <= '1';
     
 end architecture;
