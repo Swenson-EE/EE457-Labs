@@ -11,211 +11,211 @@ Z0 dC:/EE457-Labs/Labs/lab8
 Pcommontypes
 Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z3 w1743691926
-R0
-Z4 8CommonTypes.vhd
-Z5 FCommonTypes.vhd
+Z3 w1743716543
+Z4 dC:/EE457G/Labs/lab8
+Z5 8CommonTypes.vhd
+Z6 FCommonTypes.vhd
 l0
 L5
-VfdzkSz1h[02i04j3CgVdM3
-!s100 zBc3ILQU=6JGeKDEg4nT?1
-Z6 OV;C;10.5b;63
+V_hOi7QO_446Q<]C;:^l8:1
+!s100 IEoXPBIB:mmIK_kBcm81n0
+Z7 OV;C;10.5b;63
 33
-Z7 !s110 1743692249
+Z8 !s110 1743879999
 !i10b 1
-Z8 !s108 1743692249.000000
-Z9 !s90 -reportprogress|300|-2008|CommonTypes.vhd|
-Z10 !s107 CommonTypes.vhd|
+Z9 !s108 1743879999.000000
+Z10 !s90 -reportprogress|300|-2008|CommonTypes.vhd|
+Z11 !s107 CommonTypes.vhd|
 !i113 1
-Z11 o-2008
-Z12 tExplicit 1 CvgOpt 0
+Z12 o-2008
+Z13 tExplicit 1 CvgOpt 0
 Bbody
-Z13 DPx4 work 11 commontypes 0 22 fdzkSz1h[02i04j3CgVdM3
+Z14 DPx4 work 11 commontypes 0 22 _hOi7QO_446Q<]C;:^l8:1
 R1
 R2
 l0
-L41
-VF2=PTHGO0jUmAABUC28]M1
-!s100 OdcfMV[]oRAKoh][UDI[^1
-R6
-33
+L40
+VGdn>R]LYDC=b[K13KMn@D3
+!s100 NMcNbLbUV;V_68>?ER9:M3
 R7
-!i10b 1
+33
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
+!i113 1
 R12
-Ecounter
-Z14 w1743692003
 R13
+Ecounter
+R3
+R14
 Z15 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
 Z16 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
 R1
 R2
-R0
+R4
 Z17 8Counter.vhd
 Z18 FCounter.vhd
 l0
 L10
 VR_gh][oT?k=`GLcQQ1nnl3
 !s100 2fAmdRGSZmMWIGSJ]XETR1
-R6
-33
 R7
+33
+Z19 !s110 1743880000
 !i10b 1
-R8
-Z19 !s90 -reportprogress|300|-2008|Counter.vhd|
-Z20 !s107 Counter.vhd|
+Z20 !s108 1743880000.000000
+Z21 !s90 -reportprogress|300|-2008|Counter.vhd|
+Z22 !s107 Counter.vhd|
 !i113 1
-R11
 R12
-Artl
 R13
+Artl
+R14
 R15
 R16
 R1
 R2
-Z21 DEx4 work 7 counter 0 22 R_gh][oT?k=`GLcQQ1nnl3
+Z23 DEx4 work 7 counter 0 22 R_gh][oT?k=`GLcQQ1nnl3
 l31
 L27
 VIXm5g44_YFcQ5gPCFFSiE1
 !s100 T?^kHSe5W1F?gH?<3F:Ha0
-R6
-33
 R7
-!i10b 1
-R8
+33
 R19
+!i10b 1
 R20
+R21
+R22
 !i113 1
-R11
 R12
-Ede10_lite_base
-Z22 w1743692071
-Z23 DPx4 work 9 pwm_types 0 22 XYzBVlG]0eKD<A7bkUdIS1
 R13
-Z24 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Ede10_lite_base
+R3
+Z24 DPx4 work 9 pwm_types 0 22 XYzBVlG]0eKD<A7bkUdIS1
+R14
+Z25 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R1
 R2
-R0
-Z25 8de10_lite_base.vhd
-Z26 Fde10_lite_base.vhd
+R4
+Z26 8de10_lite_base.vhd
+Z27 Fde10_lite_base.vhd
 l0
 L10
 V^Y3<BNO46W8PVgmd>`f_g0
 !s100 `TId2cORfbWj_7WMD3Q;U2
-R6
+R7
 33
-Z27 !s110 1743692250
+R19
 !i10b 1
-Z28 !s108 1743692250.000000
-Z29 !s90 -reportprogress|300|-2008|de10_lite_base.vhd|
-Z30 !s107 de10_lite_base.vhd|
+R20
+Z28 !s90 -reportprogress|300|-2008|de10_lite_base.vhd|
+Z29 !s107 de10_lite_base.vhd|
 !i113 1
-R11
 R12
+R13
 Ade10_lite
-Z31 DEx4 work 19 statemachinehandler 0 22 :oEdA6HcEe190OgcoG38e3
-Z32 DEx4 work 12 statemachine 0 22 P@GjHJ`69ED^2bPzj8PFe0
-Z33 DEx4 work 3 pwm 0 22 Q`BQfnD8PkLKQ7:m82K7N0
-R21
+Z30 DEx4 work 19 statemachinehandler 0 22 :oEdA6HcEe190OgcoG38e3
+Z31 DEx4 work 12 statemachine 0 22 P@GjHJ`69ED^2bPzj8PFe0
+Z32 DEx4 work 3 pwm 0 22 3imBLmeB23LFIboAeeanf0
+R23
 R15
 R16
-Z34 DEx4 work 19 twospeedtickcounter 0 22 Q8;C2]Pn<icm:V@Q`PcCd2
-Z35 DEx4 work 17 inputsynchronizer 0 22 ;YY6kVcBA770d9h:QZJTl3
-Z36 DEx4 work 17 resetsynchronizer 0 22 d=EVHkUoBV[V9QD2[6W6I0
-R23
-R13
+Z33 DEx4 work 19 twospeedtickcounter 0 22 Q8;C2]Pn<icm:V@Q`PcCd2
+Z34 DEx4 work 17 inputsynchronizer 0 22 ;YY6kVcBA770d9h:QZJTl3
+Z35 DEx4 work 17 resetsynchronizer 0 22 d=EVHkUoBV[V9QD2[6W6I0
 R24
+R14
+R25
 R1
 R2
-Z37 DEx4 work 14 de10_lite_base 0 22 ^Y3<BNO46W8PVgmd>`f_g0
+Z36 DEx4 work 14 de10_lite_base 0 22 ^Y3<BNO46W8PVgmd>`f_g0
 l55
 L30
 VQHM65cKfjK=>RP?i:RaUC1
 !s100 ]R[92C;@KmQFP;jz_YVlX0
-R6
+R7
 33
-R27
+R19
 !i10b 1
+R20
 R28
 R29
-R30
 !i113 1
-R11
 R12
-Ede10_lite_tb
-Z38 w1743692186
-R23
 R13
+Ede10_lite_tb
+Z37 w1743879006
 R24
+R14
+R25
 R1
 R2
-R0
-Z39 8de10_lite_tb.vhd
-Z40 Fde10_lite_tb.vhd
+R4
+Z38 8de10_lite_tb.vhd
+Z39 Fde10_lite_tb.vhd
 l0
 L11
 VN_<WIPK1j7W<GCl4><^7X3
 !s100 Mc<ZmDZF`C4F]^Y@Z@ZKR1
-R6
+R7
 33
-R27
+R19
 !i10b 1
-R28
-Z41 !s90 -reportprogress|300|-2008|de10_lite_tb.vhd|
-Z42 !s107 de10_lite_tb.vhd|
+R20
+Z40 !s90 -reportprogress|300|-2008|de10_lite_tb.vhd|
+Z41 !s107 de10_lite_tb.vhd|
 !i113 1
-R11
 R12
-Atb
-R37
-R23
 R13
+Atb
+R36
 R24
+R14
+R25
 R1
 R2
-Z43 DEx4 work 12 de10_lite_tb 0 22 N_<WIPK1j7W<GCl4><^7X3
+Z42 DEx4 work 12 de10_lite_tb 0 22 N_<WIPK1j7W<GCl4><^7X3
 l58
 L14
-VMzl4iGVXN]f]>lek7^YCX2
-!s100 2oBFA7HT8C0f6nR<O2m[Y2
-R6
+Vh<IQ4cPPj^4IAeJC4HNF43
+!s100 mOF2K34=Y?lIB?FP?B4a41
+R7
 33
-R27
+R19
 !i10b 1
-R28
+R20
+R40
 R41
-R42
 !i113 1
-R11
 R12
+R13
 Egen_counter
-Z44 w1743091394
-R24
+Z43 w1743091394
+R25
 R1
 R2
 R0
-Z45 8gen_counter.vhd
-Z46 Fgen_counter.vhd
+Z44 8gen_counter.vhd
+Z45 Fgen_counter.vhd
 l0
 L5
 VF^TPESm`j;]IRBbfHCQzC1
 !s100 :fKKd5fnTAV8d0Qh;_G8B1
-R6
+R7
 33
-Z47 !s110 1743283832
+Z46 !s110 1743283832
 !i10b 1
-Z48 !s108 1743283832.000000
-Z49 !s90 -reportprogress|300|-2008|gen_counter.vhd|
-Z50 !s107 gen_counter.vhd|
+Z47 !s108 1743283832.000000
+Z48 !s90 -reportprogress|300|-2008|gen_counter.vhd|
+Z49 !s107 gen_counter.vhd|
 !i113 1
-R11
 R12
+R13
 Artl
-R24
+R25
 R1
 R2
 DEx4 work 11 gen_counter 0 22 F^TPESm`j;]IRBbfHCQzC1
@@ -223,310 +223,310 @@ l26
 L22
 V<a8k`UOmYC2bCOWi:@?Z40
 !s100 MV3dG[NR9Fh=co6kHch9U3
-R6
+R7
 33
-R47
+R46
 !i10b 1
+R47
 R48
 R49
-R50
 !i113 1
-R11
 R12
-Einputsynchronizer
-Z51 w1743691980
 R13
+Einputsynchronizer
+R3
+R14
 R1
 R2
-R0
-Z52 8InputSynchronizer.vhd
-Z53 FInputSynchronizer.vhd
+R4
+Z50 8InputSynchronizer.vhd
+Z51 FInputSynchronizer.vhd
 l0
 L8
 V;YY6kVcBA770d9h:QZJTl3
 !s100 4elazLdYn_IF?1TUPOP]43
-R6
-33
 R7
+33
+R19
 !i10b 1
-R8
-Z54 !s90 -reportprogress|300|-2008|InputSynchronizer.vhd|
-Z55 !s107 InputSynchronizer.vhd|
+R20
+Z52 !s90 -reportprogress|300|-2008|InputSynchronizer.vhd|
+Z53 !s107 InputSynchronizer.vhd|
 !i113 1
-R11
 R12
-Artl
 R13
+Artl
+R14
 R1
 R2
-R35
+R34
 l25
 L23
 VWMbSlz:mG`=7g_AofVzYf3
 !s100 :f<QH2Q:=G^oi@UZ8WDS]1
-R6
-33
 R7
+33
+R19
 !i10b 1
-R8
-R54
-R55
+R20
+R52
+R53
 !i113 1
-R11
 R12
-Epwm
-Z56 w1743691949
 R13
-R23
+Epwm
+R3
+R14
+R24
 R1
 R2
-R0
-Z57 8PWM.vhd
-Z58 FPWM.vhd
+R4
+Z54 8PWM.vhd
+Z55 FPWM.vhd
 l0
 L10
-VQ`BQfnD8PkLKQ7:m82K7N0
-!s100 O:oSi9F<IYRCc[jEe1A5Z2
-R6
+V3imBLmeB23LFIboAeeanf0
+!s100 CK^`jNnz`IG>QzWfhe5;k2
+R7
 33
-R27
+R19
 !i10b 1
-R28
-Z59 !s90 -reportprogress|300|-2008|PWM.vhd|
-Z60 !s107 PWM.vhd|
+R20
+Z56 !s90 -reportprogress|300|-2008|PWM.vhd|
+Z57 !s107 PWM.vhd|
 !i113 1
-R11
 R12
-Artl
 R13
-R23
+Artl
+R14
+R24
 R1
 R2
-R33
+R32
 l33
 L31
 V@Z`F8P=Q_GEmNNHj37:I=1
 !s100 UVKn=VZ;iMQ18`4WgdNdV1
-R6
+R7
 33
-R27
+R19
 !i10b 1
-R28
-R59
-R60
+R20
+R56
+R57
 !i113 1
-R11
 R12
+R13
 Ppwm_types
 R1
 R2
-Z61 w1743624110
-R0
-Z62 8PWM_Types.vhd
-Z63 FPWM_Types.vhd
+Z58 w1743801042
+R4
+Z59 8PWM_Types.vhd
+Z60 FPWM_Types.vhd
 l0
 L5
 VXYzBVlG]0eKD<A7bkUdIS1
 !s100 3n^UVLAeg41;QPflOYf<93
-R6
-33
 R7
-!i10b 1
+33
 R8
-Z64 !s90 -reportprogress|300|-2008|PWM_Types.vhd|
-Z65 !s107 PWM_Types.vhd|
+!i10b 1
+R9
+Z61 !s90 -reportprogress|300|-2008|PWM_Types.vhd|
+Z62 !s107 PWM_Types.vhd|
 !i113 1
-R11
 R12
+R13
 Bbody
-R23
+R24
 R1
 R2
 l0
 L41
 V`kQb<5YkNYWG<7O:H0G9?2
 !s100 bXdcKg8zPa3]_089;`;6Q2
-R6
-33
 R7
-!i10b 1
+33
 R8
-R64
-R65
+!i10b 1
+R9
+R61
+R62
 !i113 1
-R11
 R12
+R13
 Eresetsynchronizer
-Z66 w1743091743
+Z63 w1743474258
 R1
 R2
-R0
-Z67 8ResetSynchronizer.vhd
-Z68 FResetSynchronizer.vhd
+R4
+Z64 8ResetSynchronizer.vhd
+Z65 FResetSynchronizer.vhd
 l0
 L5
 Vd=EVHkUoBV[V9QD2[6W6I0
 !s100 @XM5G4=bbJ7aTVaMJ3UL12
-R6
-33
 R7
+33
+R19
 !i10b 1
-R8
-Z69 !s90 -reportprogress|300|-2008|ResetSynchronizer.vhd|
-Z70 !s107 ResetSynchronizer.vhd|
+R9
+Z66 !s90 -reportprogress|300|-2008|ResetSynchronizer.vhd|
+Z67 !s107 ResetSynchronizer.vhd|
 !i113 1
-R11
 R12
+R13
 Artl
 R1
 R2
-R36
+R35
 l20
 L18
 VD5j=IUJ6R_kS1FH;AlGIj0
 !s100 hZA4h1LbbU2Mz]AgiVV0Q1
-R6
-33
 R7
+33
+R19
 !i10b 1
-R8
-R69
-R70
+R9
+R66
+R67
 !i113 1
-R11
 R12
-Estatemachine
-Z71 w1743692098
 R13
-R23
+Estatemachine
+R3
+R14
+R24
 R1
 R2
-R0
-Z72 8StateMachine.vhd
-Z73 FStateMachine.vhd
+R4
+Z68 8StateMachine.vhd
+Z69 FStateMachine.vhd
 l0
 L9
 VP@GjHJ`69ED^2bPzj8PFe0
 !s100 YQ^=1?InGCVaSWZNn>C1:0
-R6
+R7
 33
-R27
+R19
 !i10b 1
-R28
-Z74 !s90 -reportprogress|300|-2008|StateMachine.vhd|
-Z75 !s107 StateMachine.vhd|
+R20
+Z70 !s90 -reportprogress|300|-2008|StateMachine.vhd|
+Z71 !s107 StateMachine.vhd|
 !i113 1
-R11
 R12
-Artl
 R13
-R23
+Artl
+R14
+R24
 R1
 R2
-R32
+R31
 l30
 L25
 VCek4R85LXPa]R55_:ZA2a1
 !s100 o^Oc61ZFN15JfdN38?=Jl2
-R6
+R7
 33
-R27
+R19
 !i10b 1
-R28
-R74
-R75
+R20
+R70
+R71
 !i113 1
-R11
 R12
-Estatemachinehandler
-Z76 w1743691158
-R23
 R13
+Estatemachinehandler
+R3
+R24
+R14
 R15
 R16
 R1
 R2
-R0
-Z77 8StateMachineHandler.vhd
-Z78 FStateMachineHandler.vhd
+R4
+Z72 8StateMachineHandler.vhd
+Z73 FStateMachineHandler.vhd
 l0
 L12
 V:oEdA6HcEe190OgcoG38e3
 !s100 g4SSn8oaFV:[j67diZSe21
-R6
+R7
 33
-R27
+R19
 !i10b 1
-R28
-Z79 !s90 -reportprogress|300|-2008|StateMachineHandler.vhd|
-Z80 !s107 StateMachineHandler.vhd|
+R20
+Z74 !s90 -reportprogress|300|-2008|StateMachineHandler.vhd|
+Z75 !s107 StateMachineHandler.vhd|
 !i113 1
-R11
 R12
-Artl
-R23
 R13
+Artl
+R24
+R14
 R15
 R16
 R1
 R2
-R31
+R30
 l35
 L30
-V<LH:mjQ>a84RMkFaHlAFc2
-!s100 LVDZL9Gj:aCUA[TknZEDo2
-R6
+V`PWd8V;0D6ah;k?:<gEGN2
+!s100 VkkH_1h;f8JlUCPGoPzK32
+R7
 33
-R27
+R19
 !i10b 1
-R28
-R79
-R80
+R20
+R74
+R75
 !i113 1
-R11
 R12
-Etwospeedtickcounter
-Z81 w1743692024
 R13
+Etwospeedtickcounter
+R3
+R14
 R15
 R16
 R1
 R2
-R0
-Z82 8TwoSpeedTickCounter.vhd
-Z83 FTwoSpeedTickCounter.vhd
+R4
+Z76 8TwoSpeedTickCounter.vhd
+Z77 FTwoSpeedTickCounter.vhd
 l0
 L10
 VQ8;C2]Pn<icm:V@Q`PcCd2
 !s100 ^34TjK<;O;SIWWkQBmUbA2
-R6
+R7
 33
-R27
+R19
 !i10b 1
-R28
-Z84 !s90 -reportprogress|300|-2008|TwoSpeedTickCounter.vhd|
-Z85 !s107 TwoSpeedTickCounter.vhd|
+R20
+Z78 !s90 -reportprogress|300|-2008|TwoSpeedTickCounter.vhd|
+Z79 !s107 TwoSpeedTickCounter.vhd|
 !i113 1
-R11
 R12
-Artl
 R13
+Artl
+R14
 R15
 R16
 R1
 R2
-R34
+R33
 l36
 L31
 V<1MZCaUZVV7zGj]f=PB[a0
 !s100 CTR^7bbX^cYfC_ZD`5anf3
-R6
+R7
 33
-R27
+R19
 !i10b 1
-R28
-R84
-R85
+R20
+R78
+R79
 !i113 1
-R11
 R12
+R13

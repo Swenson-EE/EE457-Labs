@@ -76,10 +76,10 @@ begin
 		
 		-- test slow speed
 		key(0) <= '0'; -- reset for testing
+		sw(0) <= '0'; -- Set to slow speed
 		wait for 5 ns;
 		key(0) <= '1';
 		
-		sw(0) <= '0';
 		
 		wait for clk_cycle * slow_speed_count * 22;
 		
@@ -89,8 +89,14 @@ begin
 		sw(0) <= '1';
 		wait for clk_cycle * fast_speed_count * 22;
 		
+		-- Reset to check 100% led reset
+		key(0) <= '0';
 		
+		wait for clk_cycle * fast_speed_count * 4;
+		sw(0) <= '0';
 		
+		-- Continue on slow speed
+		wait for clk_cycle * slow_speed_count * 60;
 		
 		
         
