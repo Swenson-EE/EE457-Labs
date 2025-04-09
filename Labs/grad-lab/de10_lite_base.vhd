@@ -101,7 +101,7 @@ begin
 	
 	
 	
-	direction <= FORWARD when (sw_sync(0) = '1') else BACKWARD;
+	direction <= FORWARD when (sw_sync(0) = '0') else BACKWARD;
 	
 	
 	LEDR <= (others => '0'); -- Drive LEDs to off
