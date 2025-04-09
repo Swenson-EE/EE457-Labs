@@ -11,6 +11,8 @@ add wave -noupdate /de10_lite_tb/dut/hex5
 add wave -noupdate /de10_lite_tb/dut/key(0)
 add wave -noupdate /de10_lite_tb/dut/key(1)
 
+add wave -noupdate /de10_lite_tb/test_number
+
 TreeUpdate [SetDefaultTree]
 WaveRestoreCursors {{Cursor 1} {20940 ns} 0}
 quietly wave cursor active 1

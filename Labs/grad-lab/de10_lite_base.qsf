@@ -445,6 +445,7 @@ set_global_assignment -name VHDL_FILE ResetSynchronizer.vhd
 set_global_assignment -name VHDL_FILE InputSynchronizer.vhd
 set_global_assignment -name VHDL_FILE de10_lite_base.vhd
 set_global_assignment -name SIGNALTAP_FILE stp1.stp
-set_global_assignment -name VHDL_FILE StateMachine.vhd
 set_global_assignment -name VHDL_FILE Types.vhd
+set_global_assignment -name VHDL_FILE BitMover.vhd
+set_global_assignment -name VHDL_FILE SnakeDraw.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

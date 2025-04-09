@@ -12,7 +12,6 @@ entity StateMachine is
 		reset:			in std_logic;
 		tick:				in std_logic;
 		
-		state_out:		out state_t;
 		link_out:		out LinkVector
 	);
 

@@ -1,0 +1,347 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/EE457G/Labs/grad-lab
+Ebitmover
+Z1 w1744180096
+Z2 DPx4 work 5 types 0 22 QX<P2O3OhNn@>CJe3Uh2J2
+Z3 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8BitMover.vhd
+Z7 FBitMover.vhd
+l0
+L9
+VSXH<:Gb[g<jHN9WQiALGI1
+!s100 VdcbUbN1XAl58T=j7SzU>3
+Z8 OV;C;10.5b;63
+33
+Z9 !s110 1744183935
+!i10b 1
+Z10 !s108 1744183935.000000
+Z11 !s90 -reportprogress|300|-2008|BitMover.vhd|
+Z12 !s107 BitMover.vhd|
+!i113 1
+Z13 o-2008
+Z14 tExplicit 1 CvgOpt 0
+Artl
+R2
+R3
+R4
+R5
+Z15 DEx4 work 8 bitmover 0 22 SXH<:Gb[g<jHN9WQiALGI1
+l33
+L29
+V_keWE=FVMMnVFj2hKY`FP2
+!s100 WLF[@PJXaQM^Q6Y^?91RI0
+R8
+33
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ede10_lite_base
+Z16 w1744175538
+R2
+R3
+R4
+R5
+R0
+Z17 8de10_lite_base.vhd
+Z18 Fde10_lite_base.vhd
+l0
+L10
+V3bd8g`>U?jN;Dj6:@GCW^3
+!s100 R@H=SN_zQ:kNI1SJTM>nK1
+R8
+33
+R9
+!i10b 1
+R10
+Z19 !s90 -reportprogress|300|-2008|de10_lite_base.vhd|
+Z20 !s107 de10_lite_base.vhd|
+!i113 1
+R13
+R14
+Ade10_lite
+Z21 DEx4 work 9 snakedraw 0 22 m[hHh3:Vm8A;:LGb:WPY:0
+R15
+Z22 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z23 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z24 DEx4 work 7 tickgen 0 22 LVLl0?>H8OIA?W1d^D=5O0
+Z25 DEx4 work 17 inputsynchronizer 0 22 ;2LYEPJVaL3ULngK6oXfa3
+Z26 DEx4 work 17 resetsynchronizer 0 22 d=EVHkUoBV[V9QD2[6W6I0
+R2
+R3
+R4
+R5
+Z27 DEx4 work 14 de10_lite_base 0 22 3bd8g`>U?jN;Dj6:@GCW^3
+l37
+L27
+VC0R<V7Zi5_F=M4Q=f0REl2
+!s100 ESBAofLBJk1JG<dnM3J0A0
+R8
+33
+R9
+!i10b 1
+R10
+R19
+R20
+!i113 1
+R13
+R14
+Ede10_lite_tb
+Z28 w1744183925
+R3
+R4
+R5
+R0
+Z29 8de10_lite_tb.vhd
+Z30 Fde10_lite_tb.vhd
+l0
+L5
+Vm^ncN=`_lndKN[GbH`<B80
+!s100 ^HeMzQUk:R`jCBJ?;R_5C1
+R8
+33
+R9
+!i10b 1
+R10
+Z31 !s90 -reportprogress|300|-2008|de10_lite_tb.vhd|
+Z32 !s107 de10_lite_tb.vhd|
+!i113 1
+R13
+R14
+Atb
+R2
+R27
+R3
+R4
+R5
+Z33 DEx4 work 12 de10_lite_tb 0 22 m^ncN=`_lndKN[GbH`<B80
+l91
+L8
+VK91I@So75o[^4U_9_:a^I1
+!s100 cCAaia3YaS0OIok2<[FFQ3
+R8
+33
+R9
+!i10b 1
+R10
+R31
+R32
+!i113 1
+R13
+R14
+Einputsynchronizer
+Z34 w1744155863
+R4
+R5
+R0
+Z35 8InputSynchronizer.vhd
+Z36 FInputSynchronizer.vhd
+l0
+L5
+V;2LYEPJVaL3ULngK6oXfa3
+!s100 V_RJ93IQS?@TmRQ<ig70o2
+R8
+33
+R9
+!i10b 1
+R10
+Z37 !s90 -reportprogress|300|-2008|InputSynchronizer.vhd|
+Z38 !s107 InputSynchronizer.vhd|
+!i113 1
+R13
+R14
+Artl
+R4
+R5
+R25
+l22
+L20
+Va9?Vd=4Y@:EZRVOmn52[g0
+!s100 :ZbOGUU@EbX]iGdb@ecIK2
+R8
+33
+R9
+!i10b 1
+R10
+R37
+R38
+!i113 1
+R13
+R14
+Eresetsynchronizer
+R34
+R4
+R5
+R0
+Z39 8ResetSynchronizer.vhd
+Z40 FResetSynchronizer.vhd
+l0
+L5
+Vd=EVHkUoBV[V9QD2[6W6I0
+!s100 @XM5G4=bbJ7aTVaMJ3UL12
+R8
+33
+R9
+!i10b 1
+R10
+Z41 !s90 -reportprogress|300|-2008|ResetSynchronizer.vhd|
+Z42 !s107 ResetSynchronizer.vhd|
+!i113 1
+R13
+R14
+Artl
+R4
+R5
+R26
+l20
+L18
+VD5j=IUJ6R_kS1FH;AlGIj0
+!s100 hZA4h1LbbU2Mz]AgiVV0Q1
+R8
+33
+R9
+!i10b 1
+R10
+R41
+R42
+!i113 1
+R13
+R14
+Esnakedraw
+Z43 w1744174190
+R2
+R4
+R5
+R0
+Z44 8SnakeDraw.vhd
+Z45 FSnakeDraw.vhd
+l0
+L9
+Vm[hHh3:Vm8A;:LGb:WPY:0
+!s100 Z@YQg2;B_>QR<8gQnUe<72
+R8
+33
+R9
+!i10b 1
+R10
+Z46 !s90 -reportprogress|300|-2008|SnakeDraw.vhd|
+Z47 !s107 SnakeDraw.vhd|
+!i113 1
+R13
+R14
+Artl
+R2
+R4
+R5
+R21
+l25
+L22
+VQSCgMDgj2eXmD`QGgo@mi0
+!s100 iGIb@d1=oc9XHKB87bJh30
+R8
+33
+R9
+!i10b 1
+R10
+R46
+R47
+!i113 1
+R13
+R14
+Etickgen
+R34
+R22
+R23
+R4
+R5
+R0
+Z48 8TickGen.vhd
+Z49 FTickGen.vhd
+l0
+L6
+VLVLl0?>H8OIA?W1d^D=5O0
+!s100 e^T90[LoDG]ICWH_K>Dd:1
+R8
+33
+R9
+!i10b 1
+R10
+Z50 !s90 -reportprogress|300|-2008|TickGen.vhd|
+Z51 !s107 TickGen.vhd|
+!i113 1
+R13
+R14
+Artl
+R22
+R23
+R4
+R5
+R24
+l27
+L23
+V8nPk>=TW`J8XI^G0lS9W53
+!s100 HRHD:P97mhQ15e;0ezn3e1
+R8
+33
+R9
+!i10b 1
+R10
+R50
+R51
+!i113 1
+R13
+R14
+Ptypes
+R4
+R5
+Z52 w1744171928
+R0
+Z53 8Types.vhd
+Z54 FTypes.vhd
+l0
+L4
+VQX<P2O3OhNn@>CJe3Uh2J2
+!s100 Nb[glOhIh0<>en0Dl6Fj]3
+R8
+33
+Z55 !s110 1744183934
+!i10b 1
+Z56 !s108 1744183934.000000
+Z57 !s90 -reportprogress|300|-2008|Types.vhd|
+Z58 !s107 Types.vhd|
+!i113 1
+R13
+R14
+Bbody
+R2
+R4
+R5
+l0
+L30
+V?RdJDcMaoh5>=gRib??gS1
+!s100 W_N1XWd[5227Q^h2c]PCL2
+R8
+33
+R55
+!i10b 1
+R56
+R57
+R58
+!i113 1
+R13
+R14
