@@ -440,6 +440,7 @@ set_location_assignment PIN_AA2 -to GPIO[35]
 set_instance_assignment -name IO_STANDARD "2.5 V" -to GPIO[35]
 set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
 set_global_assignment -name VHDL_SHOW_LMF_MAPPING_MESSAGES OFF
+set_global_assignment -name SDC_FILE "grad-lab.sdc"
 set_global_assignment -name VHDL_FILE TickGen.vhd
 set_global_assignment -name VHDL_FILE ResetSynchronizer.vhd
 set_global_assignment -name VHDL_FILE InputSynchronizer.vhd
