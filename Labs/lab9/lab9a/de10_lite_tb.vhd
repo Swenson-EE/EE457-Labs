@@ -59,7 +59,7 @@ architecture tb of de10_lite_tb is
 	end procedure;
 	
 
-
+constant COUNTS_PER_TICK: integer := 4;
 
 constant CLK_PER: time := 20 ns;
 constant clk_cycle:time := 2*clk_per;
@@ -150,6 +150,9 @@ begin
 
 -- instantiate the device under test (dut)
 dut: entity work.de10_lite_base
+generic map(
+	counts_per_tick => COUNTS_PER_TICK
+)
 port map (
     --clocks
             

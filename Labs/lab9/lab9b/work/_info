@@ -1,0 +1,513 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/EE457G/Labs/lab9/lab9a
+Pcommontypes
+Z1 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z2 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z3 w1743716543
+Z4 dC:/EE457G/Labs/lab9/lab9b
+Z5 8CommonTypes.vhd
+Z6 FCommonTypes.vhd
+l0
+L5
+VnZ<5^2AI^3X]79zLLDC@81
+!s100 O]RCX>S<S4mB8b]ogm[ac2
+Z7 OV;C;10.5b;63
+33
+Z8 !s110 1744266818
+!i10b 1
+Z9 !s108 1744266818.000000
+Z10 !s90 -reportprogress|300|-2008|CommonTypes.vhd|
+Z11 !s107 CommonTypes.vhd|
+!i113 1
+Z12 o-2008
+Z13 tExplicit 1 CvgOpt 0
+Bbody
+Z14 DPx4 work 11 commontypes 0 22 nZ<5^2AI^3X]79zLLDC@81
+R1
+R2
+l0
+L15
+VNZi^NJjWaP9`fH20^^aS60
+!s100 `dM;6PlMOg?@>Pg1aRGUV2
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ede10_lite_base
+Z15 w1744247929
+Z16 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R1
+R2
+R4
+Z17 8de10_lite_base.vhd
+Z18 Fde10_lite_base.vhd
+l0
+L6
+VDz^KVRMdEEzIm94LWR]0@1
+!s100 eM[BnQL1WdBSc0=>gPG^h2
+R7
+33
+Z19 !s110 1744266819
+!i10b 1
+Z20 !s108 1744266819.000000
+Z21 !s90 -reportprogress|300|-2008|de10_lite_base.vhd|
+Z22 !s107 de10_lite_base.vhd|
+!i113 1
+R12
+R13
+Ade10_lite
+Z23 DPx4 work 12 sevensegment 0 22 ^F3;OLW1mejBi>i4HJD[U3
+Z24 DEx4 work 10 ramdisplay 0 22 Lz@]D^ldZ1SU^m=_1egQ72
+Z25 DPx9 altera_mf 20 altera_mf_components 0 22 gV:l9C^?PSb6]b5V?_jR@3
+Z26 DEx4 work 7 ram32x4 0 22 B]W]8AIaoalebi@O<ec[N2
+Z27 DEx4 work 18 risingedgedetector 0 22 fR<HUg:zaDH25Wg80T?`B1
+Z28 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z29 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z30 DEx4 work 7 tickgen 0 22 LVLl0?>H8OIA?W1d^D=5O0
+Z31 DEx4 work 17 inputsynchronizer 0 22 ;YY6kVcBA770d9h:QZJTl3
+R14
+Z32 DEx4 work 17 resetsynchronizer 0 22 c7G91L`3jQME=9181;jD?1
+R16
+R1
+R2
+Z33 DEx4 work 14 de10_lite_base 0 22 Dz^KVRMdEEzIm94LWR]0@1
+l40
+L23
+V2EYU`BjGSR:g>?D1lmF8_1
+!s100 1WhN4]JPiEW7BS[I4G[1o2
+R7
+33
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R12
+R13
+Ede10_lite_tb
+Z34 w1744266462
+R16
+R1
+R2
+R4
+Z35 8de10_lite_tb.vhd
+Z36 Fde10_lite_tb.vhd
+l0
+L7
+VhQ?M[bf5FBi6h_`^][PX:0
+!s100 <>[UoScBj]gMT5Y5IX<EP3
+R7
+33
+Z37 !s110 1744266820
+!i10b 1
+R20
+Z38 !s90 -reportprogress|300|-2008|de10_lite_tb.vhd|
+Z39 !s107 de10_lite_tb.vhd|
+!i113 1
+R12
+R13
+Atb
+R33
+R16
+R1
+R2
+Z40 DEx4 work 12 de10_lite_tb 0 22 hQ?M[bf5FBi6h_`^][PX:0
+l90
+L10
+V=CdhCJA@@@h8;Q::VLjEF1
+!s100 3i_YchQ[H7MA]6548[@<X0
+R7
+33
+R37
+!i10b 1
+R20
+R38
+R39
+!i113 1
+R12
+R13
+Egen_counter
+R3
+R16
+R1
+R2
+R0
+Z41 8gen_counter.vhd
+Z42 Fgen_counter.vhd
+l0
+L5
+VF^TPESm`j;]IRBbfHCQzC1
+!s100 :fKKd5fnTAV8d0Qh;_G8B1
+R7
+33
+Z43 !s110 1743829152
+!i10b 1
+Z44 !s108 1743829152.000000
+Z45 !s90 -reportprogress|300|-2008|gen_counter.vhd|
+Z46 !s107 gen_counter.vhd|
+!i113 1
+R12
+R13
+Artl
+R16
+R1
+R2
+DEx4 work 11 gen_counter 0 22 F^TPESm`j;]IRBbfHCQzC1
+l26
+L22
+V<a8k`UOmYC2bCOWi:@?Z40
+!s100 MV3dG[NR9Fh=co6kHch9U3
+R7
+33
+R43
+!i10b 1
+R44
+R45
+R46
+!i113 1
+R12
+R13
+Einputsynchronizer
+R3
+R14
+R1
+R2
+R4
+Z47 8InputSynchronizer.vhd
+Z48 FInputSynchronizer.vhd
+l0
+L8
+V;YY6kVcBA770d9h:QZJTl3
+!s100 4elazLdYn_IF?1TUPOP]43
+R7
+33
+R19
+!i10b 1
+R9
+Z49 !s90 -reportprogress|300|-2008|InputSynchronizer.vhd|
+Z50 !s107 InputSynchronizer.vhd|
+!i113 1
+R12
+R13
+Artl
+R14
+R1
+R2
+R31
+l25
+L23
+VWMbSlz:mG`=7g_AofVzYf3
+!s100 :f<QH2Q:=G^oi@UZ8WDS]1
+R7
+33
+R19
+!i10b 1
+R9
+R49
+R50
+!i113 1
+R12
+R13
+Eram1port
+Z51 w1743741062
+R16
+R1
+R2
+R0
+Z52 8ram1port.vhd
+Z53 Fram1port.vhd
+l0
+L7
+VWU3hWY0_?5EbNz?8>1P3F2
+!s100 fFFbi57JZ9C1i7DXCd0N=3
+R7
+33
+R43
+!i10b 1
+R44
+Z54 !s90 -reportprogress|300|-2008|ram1port.vhd|
+Z55 !s107 ram1port.vhd|
+!i113 1
+R12
+R13
+Artl
+R16
+R1
+R2
+DEx4 work 8 ram1port 0 22 WU3hWY0_?5EbNz?8>1P3F2
+l36
+L29
+V2?>52ZQ_@g:WUP9JNh2a`0
+!s100 5EkEjTmCOaTa_7oAHf^e20
+R7
+33
+R43
+!i10b 1
+R44
+R54
+R55
+!i113 1
+R12
+R13
+Eram32x4
+Z56 w1744265572
+R25
+R1
+R2
+R4
+Z57 8ram32x4.vhd
+Z58 Fram32x4.vhd
+l0
+L42
+VB]W]8AIaoalebi@O<ec[N2
+!s100 Z<bkbJkWk<6VjYK?_PTkP2
+R7
+33
+R19
+!i10b 1
+R20
+Z59 !s90 -reportprogress|300|-2008|ram32x4.vhd|
+Z60 !s107 ram32x4.vhd|
+!i113 1
+R12
+R13
+Asyn
+R25
+R1
+R2
+R26
+l59
+L55
+VK^lCdBR1o2N3NfdikL7nm3
+!s100 M_nDk_5JcJ>`7kOz@8HA=0
+R7
+33
+R19
+!i10b 1
+R20
+R59
+R60
+!i113 1
+R12
+R13
+Eramdisplay
+Z61 w1744260244
+R23
+R16
+R1
+R2
+R4
+Z62 8RamDisplay.vhd
+Z63 FRamDisplay.vhd
+l0
+L10
+VLz@]D^ldZ1SU^m=_1egQ72
+!s100 ]oehKFYfD_>WP^DbcLHIT1
+R7
+33
+R19
+!i10b 1
+R20
+Z64 !s90 -reportprogress|300|-2008|RamDisplay.vhd|
+Z65 !s107 RamDisplay.vhd|
+!i113 1
+R12
+R13
+Artl
+R23
+R16
+R1
+R2
+R24
+l32
+L29
+V<5W4mB;<k6O<=^i:]nIhK1
+!s100 6iVBii4[bnZZKb2TRd^;C2
+R7
+33
+R19
+!i10b 1
+R20
+R64
+R65
+!i113 1
+R12
+R13
+Eresetsynchronizer
+R3
+R14
+R1
+R2
+R4
+Z66 8ResetSynchronizer.vhd
+Z67 FResetSynchronizer.vhd
+l0
+L9
+Vc7G91L`3jQME=9181;jD?1
+!s100 VPeYYPfekCL2jY36Y4a0U3
+R7
+33
+R19
+!i10b 1
+R20
+Z68 !s90 -reportprogress|300|-2008|ResetSynchronizer.vhd|
+Z69 !s107 ResetSynchronizer.vhd|
+!i113 1
+R12
+R13
+Artl
+R14
+R1
+R2
+R32
+l24
+L22
+V^4fYhI^HVPKEbgIO_M;iU0
+!s100 boh03;H:2ECXY=RL222n41
+R7
+33
+R19
+!i10b 1
+R20
+R68
+R69
+!i113 1
+R12
+R13
+Erisingedgedetector
+R3
+R1
+R2
+R4
+Z70 8RisingEdgeDetector.vhd
+Z71 FRisingEdgeDetector.vhd
+l0
+L6
+VfR<HUg:zaDH25Wg80T?`B1
+!s100 0ISI0afQ]1lKEHBIig9[g1
+R7
+33
+R19
+!i10b 1
+R20
+Z72 !s90 -reportprogress|300|-2008|RisingEdgeDetector.vhd|
+Z73 !s107 RisingEdgeDetector.vhd|
+!i113 1
+R12
+R13
+Artl
+R1
+R2
+R27
+l24
+L21
+VePnkUT;Nl570CY]nGcgi=3
+!s100 =PTjcfX>=iW?0eE2G:]iG3
+R7
+33
+R19
+!i10b 1
+R20
+R72
+R73
+!i113 1
+R12
+R13
+Psevensegment
+R1
+R2
+Z74 w1743812127
+R4
+Z75 8SevenSegment.vhd
+Z76 FSevenSegment.vhd
+l0
+L6
+V^F3;OLW1mejBi>i4HJD[U3
+!s100 XT3M7CZf;82WC2;clC<UC1
+R7
+33
+b1
+R19
+!i10b 1
+R20
+Z77 !s90 -reportprogress|300|-2008|SevenSegment.vhd|
+Z78 !s107 SevenSegment.vhd|
+!i113 1
+R12
+R13
+Bbody
+R23
+R1
+R2
+l0
+L26
+VVmBdL4[J^Zgd206B7A;MV0
+!s100 2oYSai<69jlCD;znmzXMJ0
+R7
+33
+R19
+!i10b 1
+R20
+R77
+R78
+!i113 1
+R12
+R13
+Etickgen
+Z79 w1742260630
+R28
+R29
+R1
+R2
+R4
+Z80 8TickGen.vhd
+Z81 FTickGen.vhd
+l0
+L6
+VLVLl0?>H8OIA?W1d^D=5O0
+!s100 e^T90[LoDG]ICWH_K>Dd:1
+R7
+33
+R19
+!i10b 1
+R20
+Z82 !s90 -reportprogress|300|-2008|TickGen.vhd|
+Z83 !s107 TickGen.vhd|
+!i113 1
+R12
+R13
+Artl
+R28
+R29
+R1
+R2
+R30
+l27
+L23
+V8nPk>=TW`J8XI^G0lS9W53
+!s100 HRHD:P97mhQ15e;0ezn3e1
+R7
+33
+R19
+!i10b 1
+R20
+R82
+R83
+!i113 1
+R12
+R13
