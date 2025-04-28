@@ -22,3 +22,6 @@ set_output_delay -clock { clk_out_vir } -min [expr 0.35 - 0.35 - 1.0] [get_ports
 
 set_output_delay -clock { clk_out_vir } -clock_fall -max [expr 0.7 - (-0.35) + 1.0] [get_ports {multout_xy*}]
 set_output_delay -clock { clk_out_vir } -clock_fall -min [expr 0.35 - 0.35 - 1.0] [get_ports {multout_xy*}]
+
+# Constrain asynchronous paths
+set_false_path -from reset
