@@ -25,3 +25,7 @@ set_output_delay -clock { clk_out_vir } -clock_fall -min [expr 0.35 - 0.35 - 1.0
 
 # Constrain asynchronous paths
 set_false_path -from reset
+
+# Set up multicycle paths
+set_multicycle_path -from [get_registers {x_regtwo* y_regtwo*}] -setup -end 2
+set_multicycle_path -from [get_registers {x_regtwo* y_regtwo*}] -hold -end 1
