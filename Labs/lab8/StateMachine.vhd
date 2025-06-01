@@ -30,14 +30,13 @@ architecture rtl of StateMachine is
 begin
 
 	-- state machine
-	state_machine: process(clk, reset, hold)
+	state_machine: process(clk, reset)
 	begin
 		if reset = BUTTON_ACTIVE then
 			current_state <= S0;
-		elsif hold = BUTTON_ACTIVE then
 			
 		elsif rising_edge(clk) then
-			if tick = '1' then
+			if tick = '1' and hold != '0' then
 				current_state <= next_state;
 			end if;
 		
