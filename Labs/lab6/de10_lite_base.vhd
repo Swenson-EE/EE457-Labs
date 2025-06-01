@@ -3,7 +3,6 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 library work;
-use work.all;
 use work.StateTypes.all;
 
 entity de10_lite_base is
@@ -32,25 +31,31 @@ architecture de10_lite of de10_lite_base is
 begin
 	
 	-- Reset synchronizer
-	reset_sync: entity work.Synchronizer port map(
-		clk => MAX10_CLK1_50,
-		async_in => KEY(0),
-		sync_out => reset
-	);
+	reset_sync: entity work.ResetSynchronizer
+		port map(
+			clk => MAX10_CLK1_50,
+			aclrn => KEY(0),
+			reset => reset
+		);
+	
 	
 	-- Hold synchronizer
-	hold_sync: entity work.Synchronizer port map(
-		clk => MAX10_CLK1_50,
-		async_in => KEY(1),
-		sync_out => hold
-	);
+	hold_sync: entity work.InputSynchronizer
+		port map(
+			clk => MAX10_CLK1_50,
+			reset => reset,
+			async_in => KEY(1),
+			sync_out => hold
+		);
 	
 	-- Direction synchronizer
-	dir_sync: entity work.Synchronizer port map(
-		clk => MAX10_CLK1_50,
-		async_in => SW(0),
-		sync_out => direction
-	);
+	dir_sync: entity work.InputSynchronizer
+		port map(
+			clk => MAX10_CLK1_50,
+			reset => reset,
+			async_in => SW(0),
+			sync_out => direction
+		);
 	
 	-- Slow clock
 	clk_div: entity work.clockDivider
