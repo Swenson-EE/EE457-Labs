@@ -116,11 +116,8 @@ port map (
 		wait for 50 ns;
 		
 		-- Step through states in the forward direction
-		sw(0) <= '1';
-		for i in 0 to (number_of_states + 2) loop
-			-- wait for slow_clk_wait;
-			wait for (clk_per * slow_clk_counts_per_tick);
-		end loop;
+		sw(0) <= '1';		
+		wait for (clk_per * slow_clk_counts_per_tick * (number_of_states + 3));
 		
 		-- Hold test
 		key(1) <= '0';
@@ -130,10 +127,7 @@ port map (
 		
 		-- reverse direction
 		sw(0) <= '0';
-		for i in 0 to (number_of_states + 2) loop
-			-- wait for slow_clk_wait;
-			wait for (clk_per * slow_clk_counts_per_tick);
-		end loop;
+		wait for (clk_per * slow_clk_counts_per_tick * (number_of_states + 3));
 		
 		
 		-- reset test
@@ -143,10 +137,7 @@ port map (
 		key(0) <= '1';
 		
 		-- more state transitions after reset
-		for i in 0 to 5 loop
-			-- wait for slow_clk_wait;
-			wait for (clk_per * slow_clk_counts_per_tick);
-		end loop;
+		wait for (clk_per * slow_clk_counts_per_tick * 6);
 		
 		
 		
