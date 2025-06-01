@@ -19,18 +19,10 @@ entity WasherStateMachine is
 		on_off_switch	: in std_logic;
 		cycle_switch	: in std_logic;
 		
-		--cycle_out		: out cycle_t;
-		--water_out		: out water_t;
-		
-		--state_out		: out state_t
-		
 		state_out			: out state_t;
 		cycle					: inout cycle_t;
 		water					: inout water_t;
 		tick_counter		: inout integer
-		
-		-- wash_done, spin_done, rinse_done			: inout std_logic
-		-- wash_done_out, spin_done_out, rinse_done_out : inout std_logic
 		
 	);
 
@@ -77,11 +69,17 @@ begin
 
 	
 	-- process to control state transitions
-	process(clk, reset, current_state, on_off_switch, water, emergency_stop, wash_done, spin_done)
+	process(clk, reset)
 	begin
 		if reset = '0' then
 			current_state <= OFF;
 			tick_counter <= 0;
+
+			cycle <= OFF;
+			running <= '0';
+
+			wash_done <= '0';
+			spin_done <= '0';
 			
 		
 		elsif rising_edge(clk) then
