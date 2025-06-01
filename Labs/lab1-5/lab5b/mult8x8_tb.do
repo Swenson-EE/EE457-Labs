@@ -17,14 +17,14 @@
 #******************************************************************************
 
 vlib work
-vcom -2008 ../lab1a/adder.vhd
-vcom -2008 ../lab1b/mult4x4.vhd
-vcom -2008 ../lab2a/mux4.vhd
-vcom -2008 ../lab2b/shifter.vhd
-vcom -2008 ../lab3/seven_segment_cntrl.vhd
-vcom -2008 ../lab4a/reg16.vhd
-vcom -2008 ../lab4b/counter.vhd
-vcom -2008 ../lab5a/mult_control.vhd
+vcom -2008 adder.vhd
+vcom -2008 mult4x4.vhd
+vcom -2008 mux4.vhd
+vcom -2008 shifter.vhd
+vcom -2008 seven_segment_cntrl.vhd
+vcom -2008 reg16.vhd
+vcom -2008 counter.vhd
+vcom -2008 mult_control.vhd
 vcom -2008 mult8x8.vhd mult8x8_tb.vhd
 vsim -t ns work.mult8x8_tb
 view wave
