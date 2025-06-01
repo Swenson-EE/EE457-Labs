@@ -4,7 +4,7 @@ vcom -2008 gen_counter.vhd
 
 vcom -2008 SevenSegment.vhd
 
-vcom -2008 ClockDivider.vhd
+vcom -2008 Counter.vhd
 
 vcom -2008 InputSynchronizer.vhd
 vcom -2008 ResetSynchronizer.vhd

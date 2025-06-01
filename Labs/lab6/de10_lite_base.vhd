@@ -6,7 +6,9 @@ library work;
 use work.StateTypes.all;
 
 entity de10_lite_base is
-
+	generic (
+		counts_per_tick: integer := 50_000_000
+	);
 	port (
 		--clocks
 		MAX10_CLK1_50 : in std_logic;
@@ -21,12 +23,12 @@ entity de10_lite_base is
 end entity;
 
 architecture de10_lite of de10_lite_base is
-    signal MAX10_CLK2	: std_logic;
-	 signal reset : std_logic := '1';
-	 signal hold: std_logic := '1';
-	 signal direction: std_logic := '1';
+	signal tick: std_logic := '0';
+	signal reset : std_logic := '1';
+	signal hold: std_logic := '1';
+	signal direction: std_logic := '1';
 	 
-	 signal current_state: state_type := STATE_0;
+	signal current_state: state_type := STATE_0;
 
 begin
 	
@@ -57,20 +59,20 @@ begin
 			sync_out => direction
 		);
 	
-	-- Slow clock
-	clk_div: entity work.clockDivider
+	-- Tick gen
+	tick_gen: entity work.Counter
 		generic map(
-			counts_per_tick => 4 -- for synthesis
+			counts_per_tick => counts_per_tick
 		)
 		port map(
 			clk => MAX10_CLK1_50,
 			reset => reset,
-			slow_clk => MAX10_CLK2
+			tick => tick
 		);
 	
-	
 	state_machine: entity work.StateMachine port map(
-		clk => MAX10_CLK2,
+		clk => MAX10_CLK1_50,
+		tick => tick,
 		reset => reset,
 		hold => hold,
 		direction => direction,
@@ -79,7 +81,7 @@ begin
 	);
 	
 	state_handler: entity work.StateHandler port map(
-		clk => MAX10_CLK2,
+		clk => MAX10_CLK1_50,
 		state_in => current_state,
 		
 		HEX0 => HEX0,

@@ -36,7 +36,7 @@ R2
 R3
 R4
 R5
-Z15 DEx4 work 12 clockdivider 0 22 h5NALFEL9@^dMlF=0EeJZ2
+DEx4 work 12 clockdivider 0 22 h5NALFEL9@^dMlF=0EeJZ2
 l28
 L23
 VhIN_L3>LcaozY5cLU3VT[3
@@ -51,123 +51,167 @@ R12
 !i113 1
 R13
 R14
-Ede10_lite_base
-Z16 w1741844682
-Z17 DPx4 work 10 statetypes 0 22 _>VZW;iB`]>L=3n;DJRU20
-Z18 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Ecounter
+Z15 w1748802772
+R2
+R3
 R4
 R5
-R0
-Z19 8de10_lite_base.vhd
-Z20 Fde10_lite_base.vhd
+Z16 dC:/EE457-Labs/Labs/lab6
+Z17 8Counter.vhd
+Z18 FCounter.vhd
 l0
-L9
-VSG6YEmYYJ<4nD<>dToE0h1
-!s100 B^zP5`iUQz1E]C8VV=0b42
+L7
+VM6YZQj6Qi]4:g8ZDlF?m_0
+!s100 b?<j2JhRQTK17k<IfmaX?2
 R8
 33
-R9
+Z19 !s110 1748803334
 !i10b 1
-R10
-Z21 !s90 -reportprogress|300|-2008|de10_lite_base.vhd|
-Z22 !s107 de10_lite_base.vhd|
+Z20 !s108 1748803334.000000
+Z21 !s90 -reportprogress|300|-2008|Counter.vhd|
+Z22 !s107 Counter.vhd|
 !i113 1
 R13
 R14
-Ade10_lite
-Z23 DPx4 work 12 sevensegment 0 22 Lo80WCEd>FKnX>P[0XMii0
-Z24 DEx4 work 12 statehandler 0 22 Ab>;nD64gBhkX:;XYzV0=3
-Z25 DEx4 work 12 statemachine 0 22 Y`DgjIQeG7B:6n:k_n`ge2
+Artl
 R2
 R3
-R15
-Z26 DEx4 work 12 synchronizer 0 22 AHXJ4G_E5BVl@IZ3@FWVz2
-R17
-R18
 R4
 R5
-Z27 DEx4 work 14 de10_lite_base 0 22 SG6YEmYYJ<4nD<>dToE0h1
-l32
+Z23 DEx4 work 7 counter 0 22 M6YZQj6Qi]4:g8ZDlF?m_0
+l28
 L24
-V760oVNIiIMSSP8lgBWXoR2
-!s100 N]C?KTgK0UcIz?1]@DCfJ2
+VGN>L7oD09IO<DLNzf:S`S3
+!s100 gdTX73<QOdo5kDfD5E]G00
 R8
 33
-R9
+R19
 !i10b 1
-R10
+R20
 R21
 R22
 !i113 1
 R13
 R14
-Ede10_lite_tb
-Z28 w1741990138
-R18
+Ede10_lite_base
+Z24 w1748803147
+Z25 DPx4 work 10 statetypes 0 22 _>VZW;iB`]>L=3n;DJRU20
+Z26 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 R4
 R5
-R0
-Z29 8de10_lite_tb.vhd
-Z30 Fde10_lite_tb.vhd
+R16
+Z27 8de10_lite_base.vhd
+Z28 Fde10_lite_base.vhd
+l0
+L8
+VH7nA<N2ToKZ<z^WNm^eN93
+!s100 jJ_P^:aRWgG=hRJ?ZCTQl3
+R8
+33
+Z29 !s110 1748803335
+!i10b 1
+Z30 !s108 1748803335.000000
+Z31 !s90 -reportprogress|300|-2008|de10_lite_base.vhd|
+Z32 !s107 de10_lite_base.vhd|
+!i113 1
+R13
+R14
+Ade10_lite
+Z33 DPx4 work 12 sevensegment 0 22 Lo80WCEd>FKnX>P[0XMii0
+Z34 DEx4 work 12 statehandler 0 22 Ab>;nD64gBhkX:;XYzV0=3
+Z35 DEx4 work 12 statemachine 0 22 `9_[n0WMRLT0DG6zaTFaE1
+R2
+R3
+R23
+Z36 DEx4 work 17 inputsynchronizer 0 22 ;2LYEPJVaL3ULngK6oXfa3
+Z37 DEx4 work 17 resetsynchronizer 0 22 @co<4z3GSlgo4BiZ=iM]U2
+R25
+R26
+R4
+R5
+Z38 DEx4 work 14 de10_lite_base 0 22 H7nA<N2ToKZ<z^WNm^eN93
+l33
+L25
+Vi02THoDNb:5Ic;V>Yef<F2
+!s100 SjJP2QzlGe?9KV5MkBRk70
+R8
+33
+R29
+!i10b 1
+R30
+R31
+R32
+!i113 1
+R13
+R14
+Ede10_lite_tb
+Z39 w1748803124
+R26
+R4
+R5
+R16
+Z40 8de10_lite_tb.vhd
+Z41 Fde10_lite_tb.vhd
 l0
 L5
 Vm^ncN=`_lndKN[GbH`<B80
 !s100 ^HeMzQUk:R`jCBJ?;R_5C1
 R8
 33
-R9
+R29
 !i10b 1
-R10
-Z31 !s90 -reportprogress|300|-2008|de10_lite_tb.vhd|
-Z32 !s107 de10_lite_tb.vhd|
+R30
+Z42 !s90 -reportprogress|300|-2008|de10_lite_tb.vhd|
+Z43 !s107 de10_lite_tb.vhd|
 !i113 1
 R13
 R14
 Atb
-R17
-R27
-R18
+R25
+R38
+R26
 R4
 R5
-Z33 DEx4 work 12 de10_lite_tb 0 22 m^ncN=`_lndKN[GbH`<B80
+Z44 DEx4 work 12 de10_lite_tb 0 22 m^ncN=`_lndKN[GbH`<B80
 l51
 L8
-Vl^]oa5@[9>DG^Jn@^Rbhc2
-!s100 dj`GnRo8H5Vn7DfPD`I[l2
+Ve_2ahSK25bZCFdcTEQhR?0
+!s100 :eCogH?MhWlWLU_W_[4Pm2
 R8
 33
-R9
+R29
 !i10b 1
-R10
-R31
-R32
+R30
+R42
+R43
 !i113 1
 R13
 R14
 Egen_counter
-Z34 w1740901591
-R18
+Z45 w1742073889
+R26
 R4
 R5
-R0
-Z35 8gen_counter.vhd
-Z36 Fgen_counter.vhd
+R16
+Z46 8gen_counter.vhd
+Z47 Fgen_counter.vhd
 l0
 L5
 VF^TPESm`j;]IRBbfHCQzC1
 !s100 :fKKd5fnTAV8d0Qh;_G8B1
 R8
 33
-R9
+R19
 !i10b 1
-R10
-Z37 !s90 -reportprogress|300|-2008|gen_counter.vhd|
-Z38 !s107 gen_counter.vhd|
+R20
+Z48 !s90 -reportprogress|300|-2008|gen_counter.vhd|
+Z49 !s107 gen_counter.vhd|
 !i113 1
 R13
 R14
 Artl
-R18
+R26
 R4
 R5
 DEx4 work 11 gen_counter 0 22 F^TPESm`j;]IRBbfHCQzC1
@@ -177,21 +221,99 @@ V<a8k`UOmYC2bCOWi:@?Z40
 !s100 MV3dG[NR9Fh=co6kHch9U3
 R8
 33
-R9
+R19
 !i10b 1
-R10
+R20
+R48
+R49
+!i113 1
+R13
+R14
+Einputsynchronizer
+Z50 w1748802278
+R4
+R5
+R16
+Z51 8InputSynchronizer.vhd
+Z52 FInputSynchronizer.vhd
+l0
+L5
+V;2LYEPJVaL3ULngK6oXfa3
+!s100 V_RJ93IQS?@TmRQ<ig70o2
+R8
+33
+R19
+!i10b 1
+R20
+Z53 !s90 -reportprogress|300|-2008|InputSynchronizer.vhd|
+Z54 !s107 InputSynchronizer.vhd|
+!i113 1
+R13
+R14
+Artl
+R4
+R5
+R36
+l22
+L20
+V`g0FZiKN:[XR9[^Yk_F5W2
+!s100 nJg^N[E5HCmTec>kJ:4f>0
+R8
+33
+R19
+!i10b 1
+R20
+R53
+R54
+!i113 1
+R13
+R14
+Eresetsynchronizer
+Z55 w1748802369
+R4
+R5
+R16
+Z56 8ResetSynchronizer.vhd
+Z57 FResetSynchronizer.vhd
+l0
+L5
+V@co<4z3GSlgo4BiZ=iM]U2
+!s100 _]d3GREDS>XFZFG1;Q:KI3
+R8
+33
+R19
+!i10b 1
+R20
+Z58 !s90 -reportprogress|300|-2008|ResetSynchronizer.vhd|
+Z59 !s107 ResetSynchronizer.vhd|
+!i113 1
+R13
+R14
+Artl
+R4
+R5
 R37
-R38
+l20
+L18
+VD5j=IUJ6R_kS1FH;AlGIj0
+!s100 hZA4h1LbbU2Mz]AgiVV0Q1
+R8
+33
+R19
+!i10b 1
+R20
+R58
+R59
 !i113 1
 R13
 R14
 Psevensegment
 R4
 R5
-Z39 w1741842924
-R0
-Z40 8SevenSegment.vhd
-Z41 FSevenSegment.vhd
+R45
+R16
+Z60 8SevenSegment.vhd
+Z61 FSevenSegment.vhd
 l0
 L6
 VLo80WCEd>FKnX>P[0XMii0
@@ -199,16 +321,16 @@ VLo80WCEd>FKnX>P[0XMii0
 R8
 33
 b1
-R9
+R19
 !i10b 1
-R10
-Z42 !s90 -reportprogress|300|-2008|SevenSegment.vhd|
-Z43 !s107 SevenSegment.vhd|
+R20
+Z62 !s90 -reportprogress|300|-2008|SevenSegment.vhd|
+Z63 !s107 SevenSegment.vhd|
 !i113 1
 R13
 R14
 Bbody
-R23
+R33
 R4
 R5
 l0
@@ -217,105 +339,105 @@ V5@NhHHUWgWa35j7BU7Ije1
 !s100 S`;=U0AZz:;O;382OIaHe1
 R8
 33
-R9
+R19
 !i10b 1
-R10
-R42
-R43
+R20
+R62
+R63
 !i113 1
 R13
 R14
 Estatehandler
-Z44 w1741843957
-R23
-R17
+R45
+R33
+R25
 R4
 R5
-R0
-Z45 8StateHandler.vhd
-Z46 FStateHandler.vhd
+R16
+Z64 8StateHandler.vhd
+Z65 FStateHandler.vhd
 l0
 L8
 VAb>;nD64gBhkX:;XYzV0=3
 !s100 13L:D5IJ>Vk5MIXNi3jfj2
 R8
 33
-R9
+R19
 !i10b 1
-R10
-Z47 !s90 -reportprogress|300|-2008|StateHandler.vhd|
-Z48 !s107 StateHandler.vhd|
+R20
+Z66 !s90 -reportprogress|300|-2008|StateHandler.vhd|
+Z67 !s107 StateHandler.vhd|
 !i113 1
 R13
 R14
 Artl
-R23
-R17
+R33
+R25
 R4
 R5
-R24
+R34
 l27
 L22
 V7iZ2og4f<Bag^1:H2O3D32
 !s100 nc1U384Ma^A;k;^^K_UfD3
 R8
 33
-R9
+R19
 !i10b 1
-R10
-R47
-R48
+R20
+R66
+R67
 !i113 1
 R13
 R14
 Estatemachine
-Z49 w1741844734
-R17
-R18
+Z68 w1748802966
+R25
+R26
 R4
 R5
-R0
-Z50 8StateMachine.vhd
-Z51 FStateMachine.vhd
+R16
+Z69 8StateMachine.vhd
+Z70 FStateMachine.vhd
 l0
 L10
-VY`DgjIQeG7B:6n:k_n`ge2
-!s100 5fiYG5U?liWmE6o9PfE]T2
+V`9_[n0WMRLT0DG6zaTFaE1
+!s100 YT3GWM>B[TQ4HfP]f4if32
 R8
 33
-R9
+R19
 !i10b 1
-R10
-Z52 !s90 -reportprogress|300|-2008|StateMachine.vhd|
-Z53 !s107 StateMachine.vhd|
+R20
+Z71 !s90 -reportprogress|300|-2008|StateMachine.vhd|
+Z72 !s107 StateMachine.vhd|
 !i113 1
 R13
 R14
 Artl
-R17
-R18
+R25
+R26
 R4
 R5
-R25
-l28
-L24
-Vcg_XDzSG?m@iLK=O:5hRX3
-!s100 XX[^O>H73JcLYA<8_CUMQ2
+R35
+l29
+L25
+Vz@aO1797UUEa^:oB3WY_N3
+!s100 ;h`:;RKeL?00foLDo`oma3
 R8
 33
-R9
+R19
 !i10b 1
-R10
-R52
-R53
+R20
+R71
+R72
 !i113 1
 R13
 R14
 Pstatetypes
 R4
 R5
-w1741837333
-R0
+R45
+R16
 8StateTypes.vhd
 FStateTypes.vhd
 l0
@@ -324,21 +446,21 @@ V_>VZW;iB`]>L=3n;DJRU20
 !s100 KVFLR25>4]9>NiI[;k12l2
 R8
 33
-R9
+R19
 !i10b 1
-R10
+R20
 !s90 -reportprogress|300|-2008|StateTypes.vhd|
 !s107 StateTypes.vhd|
 !i113 1
 R13
 R14
 Esynchronizer
-Z54 w1741593241
+Z73 w1741593241
 R4
 R5
 R0
-Z55 8Synchronizer.vhd
-Z56 FSynchronizer.vhd
+Z74 8Synchronizer.vhd
+Z75 FSynchronizer.vhd
 l0
 L4
 VAHXJ4G_E5BVl@IZ3@FWVz2
@@ -348,15 +470,15 @@ R8
 R9
 !i10b 1
 R10
-Z57 !s90 -reportprogress|300|-2008|Synchronizer.vhd|
-Z58 !s107 Synchronizer.vhd|
+Z76 !s90 -reportprogress|300|-2008|Synchronizer.vhd|
+Z77 !s107 Synchronizer.vhd|
 !i113 1
 R13
 R14
 Artl
 R4
 R5
-R26
+DEx4 work 12 synchronizer 0 22 AHXJ4G_E5BVl@IZ3@FWVz2
 l21
 L17
 V7W`oPboZl]JK94b8DU22e3
@@ -366,8 +488,8 @@ R8
 R9
 !i10b 1
 R10
-R57
-R58
+R76
+R77
 !i113 1
 R13
 R14

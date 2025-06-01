@@ -9,12 +9,13 @@ use work.StateTypes.all;
 
 entity StateMachine is
 	port (
-		clk			: in std_logic;
+		clk				: in std_logic;
+		tick			: in std_logic;
 		reset			: in std_logic;
 		hold			: in std_logic;
-		direction	: in std_logic;
+		direction		: in std_logic;
 		
-		state_out	: out state_type
+		state_out		: out state_type
 	);
 end entity;
 
@@ -33,10 +34,12 @@ begin
 	begin
 		if reset = '0' then
 			current_state <= STATE_0;
-		elsif hold = '0' then
+		-- elsif rising_edge(clk) then
 			-- current_state <= current_state;
 		elsif rising_edge(clk) then
-			current_state <= next_state;
+			if tick = '1' then
+				current_state <= next_state;
+			end if;
 		end if;
 	end process;
 	

@@ -30,8 +30,8 @@ architecture tb of de10_lite_tb is
 
 constant number_of_states: integer := 10;
 -- constant slow_clk_wait: time := 1 sec;
-constant slow_clk_counts_per_tick: integer := 4;
-
+-- constant slow_clk_counts_per_tick: integer := 4;
+constant COUNTS_PER_TICK: integer := 4;
 
 constant clk_per: time := 20 ns;				-- 50 MHz Clock
 constant clk_cycle:time := 2*clk_per;		
@@ -74,6 +74,9 @@ begin
 
 -- instantiate the device under test (dut)
 dut: entity work.de10_lite_base
+generic map(
+	counts_per_tick => COUNTS_PER_TICK
+)
 port map (
     --clocks
             
@@ -117,17 +120,17 @@ port map (
 		
 		-- Step through states in the forward direction
 		sw(0) <= '1';		
-		wait for (clk_per * slow_clk_counts_per_tick * (number_of_states + 3));
+		wait for (clk_per * COUNTS_PER_TICK * (number_of_states + 3));
 		
 		-- Hold test
 		key(1) <= '0';
-		wait for (clk_per * slow_clk_counts_per_tick * 4);
+		wait for (clk_per * COUNTS_PER_TICK * 4);
 		key(1) <= '1';
 		
 		
 		-- reverse direction
 		sw(0) <= '0';
-		wait for (clk_per * slow_clk_counts_per_tick * (number_of_states + 3));
+		wait for (clk_per * COUNTS_PER_TICK * (number_of_states + 3));
 		
 		
 		-- reset test
@@ -137,7 +140,7 @@ port map (
 		key(0) <= '1';
 		
 		-- more state transitions after reset
-		wait for (clk_per * slow_clk_counts_per_tick * 6);
+		wait for (clk_per * COUNTS_PER_TICK * 6);
 		
 		
 		
