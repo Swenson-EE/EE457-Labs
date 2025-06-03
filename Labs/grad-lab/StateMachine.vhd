@@ -40,19 +40,6 @@ begin
 	
 	end process;
 	
-	
-	-- Calculate the next link
-	link_proc: process
-	begin
-		
-	end process;
-	
-	
-	
-	
-	
-	
-	
 
 	state_out <= current_state;
 	link_out <= current_link;
